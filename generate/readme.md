@@ -9,9 +9,9 @@ To use this project, run the following command:
 
 ```bash
 python3 generate_formula.py
-> formulas.txt
+> generate formulas.txt
 python3 generate_mutant.py
-> mutants.txt
+> generate mutants.txt
 python3 check_if_equivalent.py
 ```
 
@@ -20,4 +20,5 @@ Contains the Maude files, which generates the random formulas:
 generate_formula.maude
 generate_mutant.maude
 
+#### Spot folder
 There is also a folder with spot which still has to be implemnted. 

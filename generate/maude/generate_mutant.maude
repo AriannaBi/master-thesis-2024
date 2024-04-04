@@ -1,15 +1,13 @@
 
 
 mod without_reverse is
-   protecting BOOL .
-   --- set print rules on .
----    protecting NAT .
-   sort Int AP .
+   --- protecting BOOL .
+   ---    protecting NAT .
+   sort Int .
 ---    defining the operators
-   subsorts AP < Int  .
-   ops "a" "b" "c" "d" "e" "f" true false : -> AP .
-   ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> AP .
-   ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> AP .
+   ops "a" "b" "c" "d" "e" "f" true false : -> Int .
+   ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Int .
+   ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Int .
 
    op X : Int -> Int . ---    neXt
    op ! : Int -> Int . ---    not
@@ -20,14 +18,13 @@ mod without_reverse is
    op (_)U(_) : Int Int -> Int . ---    until
    op _=>_ : Int Int -> Int . ---    implication
    op _<=>_ : Int Int -> Int . ---    implication
-   vars N M R : Int .
-   vars ap : AP .
+
+   vars N M P : Int .
+
 ********************************* rules **********************************************
     rl [duality1] : !(X(M)) => X(!(M)) .
-    rl [duality2] : !(F(M)) => F(!(M)) .
-    rl [duality3] : !(G(M)) => G(!(M)) .
-    rl [duality4] : !(F(M)) => G(!(M)) .
-    rl [duality5] : !(G(M)) => F(!(M)) .
+    rl [duality2] : !(F(M)) => G(!(M)) .
+    rl [duality3] : !(G(M)) => F(!(M)) .
     
     rl [idempotency1] : F(F(M)) => F(M) .
     rl [idempotency2] : G(G(M)) => G(M) .
@@ -42,21 +39,17 @@ mod without_reverse is
     rl [distributive3] : G((M) & (N)) => (G(M)) & (G(N)) .
     rl [distributive4] : X((M) | (N)) => (X(M)) | (X(N)) .
     rl [distributive5] : X((M) & (N)) => (X(M)) & (X(N)) .
-   ---  rl [distributive6] : ap U (M U N) => (ap U M) U (ap U N) .
+    rl [distributive6] : (P) U ((M) U (N)) => ((P) U (M)) U ((P) U (N)) .
 
    ---  rl [special1] : G(M) => (M) & (X(G(M))) .
    ---  rl [special2] : F(M) => ((M)) | (X(F(M))) .
 --- ******************************* end rules *******************************************
 
-    --- rl [duality1_replace] : X(!(M)) => xnot(M) .
-    --- rl [duality2_replace] : F(!(M)) => fnot(M) .
-    --- rl [duality3_replace] : G(!(M)) => gnot(M) .
+
 ********************************* rules_reversed **********************************************
     rl [duality1_reverse] : X(!(M)) => !(X(M)) .
-    rl [duality2_reverse] : F(!(M)) => !(F(M)) .
-    rl [duality3_reverse] : G(!(M)) => !(G(M)) .
-    rl [duality4_reverse] : G(!(M)) => !(F(M)) .
-    rl [duality5_reverse] : F(!(M)) => !(G(M)) .
+    rl [duality2_reverse] : G(!(M)) => !(F(M)) .
+    rl [duality3_reverse] : F(!(M)) => !(G(M)) .
 
     rl [idempotency1_reverse] : F(M) => F(F(M)) .
     rl [idempotency2_reverse] : G(M) => G(G(M)) .
@@ -71,54 +64,9 @@ mod without_reverse is
     rl [distributive3_reverse] : (G(M)) & (G(N)) => G((M) & (N)) .
     rl [distributive4_reverse] : (X(M)) | (X(N)) => X((M) | (N)) .
     rl [distributive5_reverse] : (X(M)) & (X(N)) => X((M) & (N)) .
-   ---  rl [distributive6_reverse] : (ap U M) U (ap U N) => ap U (M U N) .
+    rl [distributive6_reverse] : ((P) U (M)) U ((P) U (N)) => (P) U ((M) U (N)) .
 ******************************* end rules_reversed *******************************************
 
 
 
 endm
-
---- mod LTL is
----     sorts Symbol Formula .
----     subsort Symbol < Formula .
-
-    
----     ops a b c : -> Symbol [ctor] .
-
----     op !(X_) : Symbol -> Symbol [ctor] .
----     op X!(_) : Symbol -> Symbol [ctor] .
-
----     --- op X(_) : Symbol -> Symbol [ctor] .  
----     --- op (_)X : Symbol -> Symbol [ctor] . 
-
----     --- op M(_) : Symbol -> Symbol [ctor] .  
----     --- op (_)M : Symbol -> Symbol [ctor] .
-    
-
----     var Y : Symbol .
-
----     --- rl [swap] : M(Y) => (Y)M .
----     --- rl [swap] : X(Y) => (Y)X .
----     rl [swap] : !(X Y) => X!(Y) .
-    
-
---- endm
-
-********************************* equations ***************************************
---- --- duality law
----    eq !(X(M)) = X(!(M)) .
----    eq !(F(M)) = F(!(M)) .
----    eq !(G(M)) = G(!(M)) .
---- ---    idempotency law
----    eq F(F(M)) = F(M) .
----    eq G(G(M)) = G(M) .
----    eq M U (M U N) = M U N .
----    eq (M U N) U N = M U N .
---- ---    absorption law
----     eq F(G(F(M))) = G(F(M)) .
----     eq G(F(G(M))) = F(G(M)) .
---- --- distributive law
----     eq G(M U N) = (G(M)) ∧ (G(N)) .
----     eq F(M ∧ N) = F(M) ∨ F(N) .
----     eq G(M ∧ N) = G(M) ∨ G(N) .
-******************************* end equations*****************************************
