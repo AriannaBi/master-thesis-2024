@@ -14,6 +14,13 @@ m_ap = maude.getModule('insert_ap')
 t = m_generate.parseTerm('M')
 pattern = m_generate.parseTerm('M')
 
+
+# deletecontent of file because we will append formulas and mutants from scratch
+try_file = open('formulas.txt', 'w')
+if try_file:
+    try_file.close()
+
+
 with open('formulas.txt', 'w', newline='') as file:
     i = 0
     for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=3):

@@ -49,5 +49,5 @@ for line in Lines:
             print(original_formula)
             print(are_eq)
 
-print("Read ", n_formulas, "formulas and ", n_mutants, " mutants")
+print("Checked ", n_formulas, "formulas and ", n_mutants, " mutants")
             

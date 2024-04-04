@@ -20,27 +20,29 @@ file_in = open('formulas.txt', 'r') #read formula
 file_out = open('mutants.txt', 'a') #write formula and append mutants
 Lines = file_in.readlines()
 
+n_formula = 0
 for line in Lines:
     # line = Lines[85]
     # line = 'X(!(F(!("a"))))'
     # print(line, '\n')
-
+    n_formula += 1
     t = m.parseTerm(line)
-    print("PHI ", t)
+    # print("PHI ", t)
     file_out.write(str(t) + '..' + "" )
     pattern = m.parseTerm('M')
 
-    i=0
+    n_mutant=0
     for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=2):
         # if M is not in the solution, print it
         if (str(sol).find('M') == -1):
         # if (str(sol).find('M') == -1) and str(sol) != str(t): #exclude the formula itself from the mutants
-            i += 1
-            print("PHI' ",sol) 
+            n_mutant += 1
+            # print("PHI' ",sol) 
             file_out.write(str(sol) +  '..' + "")
-    print('\n')
+    # print('\n')
     file_out.write('\n')
 
+print("Written file mutants.txt, Read  ", n_formula, " formulas and  ", n_mutant, " mutants")
 
 
 file_in.close()
