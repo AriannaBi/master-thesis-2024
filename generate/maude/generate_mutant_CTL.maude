@@ -1,25 +1,27 @@
 
 
-mod without_reverse is
-   --- protecting BOOL .
-   ---    protecting NAT .
-   sort Int .
+mod gen_mutation is
+   sort Formula .
+
 ---    defining the operators
-   ops "a" "b" "c" "d" "e" "f" true false : -> Int .
-   ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Int .
-   ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Int .
+   ops "a" "b" "c" "d" "e" "f" true false : -> Formula .
+   ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
+   ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
 
-   op X : Int -> Int . ---    neXt
-   op ! : Int -> Int . ---    not
-   op F : Int -> Int . ---    eventually
-   op G : Int -> Int . ---    always
-   op (_)&(_) : Int Int -> Int . ---    and
-   op (_)|(_) : Int Int -> Int . ---    or
-   op (_)U(_) : Int Int -> Int . ---    until
-   op _=>_ : Int Int -> Int . ---    implication
-   op _<=>_ : Int Int -> Int . ---    implication
+   op X : Formula -> Formula . ---    neXt
+   op ! : Formula -> Formula . ---    not
+   op F : Formula -> Formula . ---    eventually
+   op G : Formula -> Formula . ---    always
+   op (_)&(_) : Formula Formula -> Formula . ---    and
+   op (_)|(_) : Formula Formula -> Formula . ---    or
+   op (_)U(_) : Formula Formula -> Formula . ---    until
+   op _=>_ : Formula Formula -> Formula . ---    implication
+   op _<=>_ : Formula Formula -> Formula . ---    implication
+   --- CTL
+   op A[_] : Formula -> Formula . ---    path quantifier
+   op E[_] : Formula -> Formula . ---    path quantifier
 
-   vars N M P : Int .
+   vars N M P : Formula .
 
 ********************************* rules **********************************************
     rl [duality1] : !(X(M)) => X(!(M)) .

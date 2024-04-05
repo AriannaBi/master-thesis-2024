@@ -31,7 +31,7 @@ assert are_eq == True
 #############################################
 
 
-file_in = open('mutants.txt', 'r') #read formula and relative mutants
+file_in = open('output/mutants_LTL.txt', 'r') #read formula and relative mutants
 Lines = file_in.readlines()
 
 n_mutants = 0

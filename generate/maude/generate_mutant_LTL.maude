@@ -1,0 +1,72 @@
+
+
+mod gen_mutation_LTL is
+   sort Formula .
+
+---    defining the operators
+   ops "a" "b" "c" "d" "e" "f" true false : -> Formula .
+   ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
+   ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
+
+   op X : Formula -> Formula . ---    neXt
+   op ! : Formula -> Formula . ---    not
+   op F : Formula -> Formula . ---    eventually
+   op G : Formula -> Formula . ---    always
+   op (_)&(_) : Formula Formula -> Formula . ---    and
+   op (_)|(_) : Formula Formula -> Formula . ---    or
+   op (_)U(_) : Formula Formula -> Formula . ---    until
+   op _=>_ : Formula Formula -> Formula . ---    implication
+   op _<=>_ : Formula Formula -> Formula . ---    implication
+
+   vars N M P : Formula .
+
+********************************* rules **********************************************
+    rl [duality1] : !(X(M)) => X(!(M)) .
+    rl [duality2] : !(F(M)) => G(!(M)) .
+    rl [duality3] : !(G(M)) => F(!(M)) .
+   ---  rl [duality3] : (G(M)) => !(G(!(M))) . it is not a rule.it gives not equivalent formula
+    
+    rl [idempotency1] : F(F(M)) => F(M) .
+    rl [idempotency2] : G(G(M)) => G(M) .
+    rl [idempotency3] : (M) U ((M) U (N)) => (M) U (N) .
+    rl [idempotency4] : ((M) U (N)) U (N) => (M) U (N) .
+
+    rl [absorption1] : F(G(F(M))) => G(F(M)) .
+    rl [absorption2] : G(F(G(M))) => F(G(M)) .
+
+    rl [distributive1] : X((M) U (N)) => (X(M)) U (X(N)) .
+    rl [distributive2] : F((M) | (N)) => (F(M)) | (F(N)) .
+    rl [distributive3] : G((M) & (N)) => (G(M)) & (G(N)) .
+    rl [distributive4] : X((M) | (N)) => (X(M)) | (X(N)) .
+    rl [distributive5] : X((M) & (N)) => (X(M)) & (X(N)) .
+    rl [distributive6] : (P) U ((M) U (N)) => ((P) U (M)) U ((P) U (N)) .
+
+   ---  rl [special1] : G(M) => (M) & (X(G(M))) .
+   ---  rl [special2] : F(M) => ((M)) | (X(F(M))) .
+--- ******************************* end rules *******************************************
+
+
+********************************* rules_reversed **********************************************
+    rl [duality1_reverse] : X(!(M)) => !(X(M)) .
+    rl [duality2_reverse] : G(!(M)) => !(F(M)) .
+    rl [duality3_reverse] : F(!(M)) => !(G(M)) .
+
+    rl [idempotency1_reverse] : F(M) => F(F(M)) .
+    rl [idempotency2_reverse] : G(M) => G(G(M)) .
+    rl [idempotency3_reverse] : (M) U (N) => (M) U ((M) U (N)) .
+    rl [idempotency4_reverse] : (M) U (N) => ((M) U (N)) U (N) .
+
+    rl [absorption1_reverse] : G(F(M)) => F(G(F(M))) .
+    rl [absorption2_reverse] : F(G(M)) => G(F(G(M))) .
+   
+    rl [distributive1_reverse] : (X(M)) U (X(N)) => X((M) U (N)) .
+    rl [distributive2_reverse] : (F(M)) | (F(N)) => F((M) | (N)) .
+    rl [distributive3_reverse] : (G(M)) & (G(N)) => G((M) & (N)) .
+    rl [distributive4_reverse] : (X(M)) | (X(N)) => X((M) | (N)) .
+    rl [distributive5_reverse] : (X(M)) & (X(N)) => X((M) & (N)) .
+    rl [distributive6_reverse] : ((P) U (M)) U ((P) U (N)) => (P) U ((M) U (N)) .
+******************************* end rules_reversed *******************************************
+
+
+
+endm

@@ -1,0 +1,43 @@
+
+
+mod gen_formula_LTL is
+   sort Formula PathFormula .
+
+   --- atomic propositions
+   ops "a" "b" "c" "d" "e" "f" true false : -> Formula .
+   ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
+   ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
+
+   op ! : Formula -> Formula . ---    not
+   op X : Formula -> Formula . ---    next
+   op F : Formula -> Formula . ---    eventually
+   op G : Formula -> Formula . ---    always
+
+   op (_)&(_) : Formula Formula -> Formula . ---    and
+   op (_)|(_) : Formula Formula -> Formula . ---    or
+   op (_)U(_) : Formula Formula -> Formula . ---    until
+   op (_)=>(_) : Formula Formula -> Formula . ---    implication
+   op (_)<=>(_) : Formula Formula -> Formula . ---    implication
+   
+   vars M : Formula .
+
+   --- Formula operators
+   rl [next] : M => X(M) .
+   rl [not] : M => !(M) .
+   rl [always] : M => G(M) .
+   rl [eventually] : M => F(M) .
+
+   rl [and] : M => (M) & (M) .
+   rl [or] : M => (M) | (M) .
+   rl [until] : M => (M) U (M) .
+
+   ---   Atomic operators
+   rl [a] : M => "a" .
+   rl [b] : M => "b" .
+   rl [b] : M => "c" .
+   rl [s=0] : M => s=0 .
+   rl [s=1] : M => s=1 .
+   rl [s=2] : M => s=2 .
+   rl [s!=0] : M => s!=0 .
+
+endm

@@ -1,33 +1,34 @@
 
 
-mod gen_formula is
+mod gen_formula_CTL is
    --- protecting BOOL .
-   sort Formula .
+   sort Formula PathFormula .
 
    --- atomic propositions
    ops "a" "b" "c" "d" "e" "f" true false : -> Formula .
    ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
    ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
 
-   op X : Formula -> Formula . ---    next
    op ! : Formula -> Formula . ---    not
+   op X : Formula -> Formula . ---    next
    op F : Formula -> Formula . ---    eventually
    op G : Formula -> Formula . ---    always
 
-   op M1 : -> Formula .
-   op M2 : -> Formula .
-   op M3 : -> Formula .
-   op M4 : -> Formula .
-
-   --- op (_)&(_) : Formula Formula -> Formula . --- remember parenthesis when running output for PRISM
    op (_)&(_) : Formula Formula -> Formula . ---    and
    op (_)|(_) : Formula Formula -> Formula . ---    or
    op (_)U(_) : Formula Formula -> Formula . ---    until
    op (_)=>(_) : Formula Formula -> Formula . ---    implication
    op (_)<=>(_) : Formula Formula -> Formula . ---    implication
+   --- CTL
+   op A[_]: Formula -> Formula . ---    path quantifier
+   op E[_]: Formula -> Formula . ---    path quantifier
    
    vars M : Formula .
 
+
+   --- CTL Path Formula
+   rl [path_formula] : M => A[M] .
+   rl [path_formula] : M => E[M] .
    --- Formula operators
    rl [next] : M => X(M) .
    rl [not] : M => !(M) .
