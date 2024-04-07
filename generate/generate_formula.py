@@ -1,6 +1,7 @@
 import maude
 import os.path
 import numpy as np
+import pandas as pd
 
 # deletecontent of file because we will append formulas and mutants from scratch
 try_file = open('output/formulas_LTL.txt', 'w')

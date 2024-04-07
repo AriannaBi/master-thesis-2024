@@ -38,7 +38,8 @@ n_mutants = 0
 n_formulas = 0
 for line in Lines:
     n_formulas += 1
-    array_formula = line.split('..')[:-1] #last element is \n
+    array_formula = line.split(' ')[:-1] #last element is \n
+    array_formula = [x for x in array_formula if x] #remove empty elements ''
     original_formula = array_formula[0]
     mutants = array_formula[1:]
     for mutant in mutants:
@@ -50,4 +51,3 @@ for line in Lines:
             print(are_eq)
 
 print("Checked ", n_formulas, "formulas and ", n_mutants, " mutants")
-            

@@ -3,6 +3,8 @@
 ## Description 
 This project allow to generate random LTL/CTL formulas, mutate them randomly, test if the mutations and the original formula are equivalent
 
+## Pipeline
+generation of the formulas -> generation of the mutants -> filtration of the mutants -> check equivalences original-mutants
 
 ## Usage
 To use this project, run the following command:
