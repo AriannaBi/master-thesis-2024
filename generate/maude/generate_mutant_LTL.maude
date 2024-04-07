@@ -41,6 +41,7 @@ mod gen_mutation_LTL is
     rl [distributive5] : X((M) & (N)) => (X(M)) & (X(N)) .
     rl [distributive6] : (P) U ((M) U (N)) => ((P) U (M)) U ((P) U (N)) .
 
+      --- WHERE IS THE EXPANSION LAW????
    ---  rl [special1] : G(M) => (M) & (X(G(M))) .
    ---  rl [special2] : F(M) => ((M)) | (X(F(M))) .
 --- ******************************* end rules *******************************************
