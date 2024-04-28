@@ -5,7 +5,7 @@ mod gen_formula_CTL is
    sort Formula PathFormula .
 
    --- atomic propositions
-   ops "a" "b" "c" "d" "e" "f" true false : -> Formula .
+   ops a "b" "c" "d" "e" "f" true false : -> Formula .
    ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
    ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
 
@@ -20,32 +20,69 @@ mod gen_formula_CTL is
    op (_)=>(_) : Formula Formula -> Formula . ---    implication
    op (_)<=>(_) : Formula Formula -> Formula . ---    implication
    --- CTL
-   op A[_]: Formula -> Formula . ---    path quantifier
-   op E[_]: Formula -> Formula . ---    path quantifier
+   op A_ : Formula -> Formula . ---    path quantifier
+   op E_ : Formula -> Formula . ---    path quantifier
    
-   vars M : Formula .
+   vars M R : Formula .
 
+--- You apply the rule once, and you get "A X(a)".
+--- Now, according to the rule, "A X(a)" matches the pattern "M", so the rule can be applied again.
+--- Applying the rule again to "A X(a)", you get "A A X(a)".
 
-   --- CTL Path Formula
-   rl [path_formula] : M => A[M] .
-   rl [path_formula] : M => E[M] .
+--- crl [next_A] : M => A X(M) 
+---       if M = a .
+
    --- Formula operators
-   rl [next] : M => X(M) .
-   rl [not] : M => !(M) .
-   rl [always] : M => G(M) .
-   rl [eventually] : M => F(M) .
+   rl [next_A] : M => A X(M) .
+      --- if  M =/= A M  .
+      --- if M = X(M) .
+   --- rl [jjkkkk] : R => 
+   --- rl [next_E] : M => E X(M) .
+   --- rl [not_A] : M => A !(M) .
+   --- rl [not_E] : M => E !(M) .
+   --- rl [always_A] : M => A G(M) .
+   --- rl [always_E] : M => E G(M) .
+   --- rl [eventually_A] : M => A F(M) .
+   --- rl [eventually_E] : M => E F(M) .
 
-   rl [and] : M => (M) & (M) .
-   rl [or] : M => (M) | (M) .
-   rl [until] : M => (M) U (M) .
+
+   rl [and_A] : M => A X((M) & (M)) .
+   --- rl [and_E] : M => E((M) & (M)) .
+
+
+   --- rl [or_A] : M => A((M) | (M)) .
+   --- rl [or_E] : M => E(M) | (M) .
+
+
+   --- rl [until_A] : M => A(M) U (M) .
+   --- rl [until_E] : M => E(M) U (M) .
+
+
+---   --- Formula operators
+---    rl [next_A] : M => A[X(M)] .
+---    rl [next_E] : M => E[X(M)] .
+---    rl [not_A] : M => A[!(M)] .
+---    rl [not_E] : M => E[!(M)] .
+---    rl [always_A] : M => A[G(M)] .
+---    rl [always_E] : M => E[G(M)] .
+---    rl [eventually_A] : M => A[F(M)] .
+---    rl [eventually_E] : M => E[F(M)] .
+
+
+---    rl [and_A] : M => A[(M) & (M)] .
+---    rl [and_E] : M => E[(M) & (M)] .
+---    rl [or_A] : M => A[(M) | (M)] .
+---    rl [or_E] : M => E[(M) | (M)] .
+---    rl [until_A] : M => A[(M) U (M)] .
+---    rl [until_E] : M => E[(M) U (M)] .
 
    ---   Atomic operators
-   rl [a] : M => "a" .
-   rl [b] : M => "b" .
-   rl [b] : M => "c" .
-   rl [s=0] : M => s=0 .
-   rl [s=1] : M => s=1 .
-   rl [s=2] : M => s=2 .
-   rl [s!=0] : M => s!=0 .
+   rl [a] : M => a .
+   --- rl [b] : M => "b" .
+   --- rl [b] : M => "c" .
+   --- rl [s=0] : M => s=0 .
+   --- rl [s=1] : M => s=1 .
+   --- rl [s=2] : M => s=2 .
+   --- rl [s!=0] : M => s!=0 .
 
 endm

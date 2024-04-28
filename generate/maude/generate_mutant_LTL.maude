@@ -24,7 +24,6 @@ mod gen_mutation_LTL is
     rl [duality1] : !(X(M)) => X(!(M)) .
     rl [duality2] : !(F(M)) => G(!(M)) .
     rl [duality3] : !(G(M)) => F(!(M)) .
-   ---  rl [duality3] : (G(M)) => !(G(!(M))) . it is not a rule.it gives not equivalent formula
     
     rl [idempotency1] : F(F(M)) => F(M) .
     rl [idempotency2] : G(G(M)) => G(M) .
@@ -39,8 +38,10 @@ mod gen_mutation_LTL is
     rl [distributive3] : G((M) & (N)) => (G(M)) & (G(N)) .
     rl [distributive4] : X((M) | (N)) => (X(M)) | (X(N)) .
     rl [distributive5] : X((M) & (N)) => (X(M)) & (X(N)) .
-    rl [distributive6] : (P) U ((M) U (N)) => ((P) U (M)) U ((P) U (N)) .
+    rl [distributive6] : (P) U ((M) | (N)) => ((P) U (M)) | ((P) U (N)) .
 
+
+---  rl [duality3] : (G(M)) => !(G(!(M))) . it is not a rule.it gives not equivalent formula
       --- WHERE IS THE EXPANSION LAW????
    ---  rl [special1] : G(M) => (M) & (X(G(M))) .
    ---  rl [special2] : F(M) => ((M)) | (X(F(M))) .
@@ -65,7 +66,7 @@ mod gen_mutation_LTL is
     rl [distributive3_reverse] : (G(M)) & (G(N)) => G((M) & (N)) .
     rl [distributive4_reverse] : (X(M)) | (X(N)) => X((M) | (N)) .
     rl [distributive5_reverse] : (X(M)) & (X(N)) => X((M) & (N)) .
-    rl [distributive6_reverse] : ((P) U (M)) U ((P) U (N)) => (P) U ((M) U (N)) .
+    rl [distributive6_reverse] : ((P) U (M)) | ((P) U (N)) => (P) U ((M) | (N)) .
 ******************************* end rules_reversed *******************************************
 
 

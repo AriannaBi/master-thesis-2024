@@ -6,6 +6,8 @@ import pandas as pd
 import csv
 import sys
 
+# python3 generate_mutant.py -LTL
+
 LTL = False
 CTL = False
 if len(sys.argv) > 1:

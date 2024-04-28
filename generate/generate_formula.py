@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 import sys
 
+# python3 generate_formula.py -LTL
+
 # deletecontent of file because we will append formulas and mutants from scratch
 try_file = open('output/formulas_LTL.txt', 'w')
 if try_file:
@@ -36,7 +38,7 @@ def generate_LTL():
 
     with open('output/formulas_LTL.txt', 'w', newline='') as file:
         i = 0
-        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=3):
+        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=5):
             # if M is not in the solution, print it
             if (str(sol).find('M') == -1):
                 i += 1
@@ -53,17 +55,19 @@ def generate_CTL():
     maude.load(os.path.join(os.path.dirname(__file__), 'maude/generate_formula_CTL.maude'))
     m = maude.getCurrentModule()
 
-    t = m.parseTerm('M')
+    t = m.parseTerm('A M')
     pattern = m.parseTerm('M')
 
     with open('output/formulas_CTL.txt', 'w', newline='') as file:
         i = 0
-        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=4):
+        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=3):
             # if M is not in the solution, print it
             if (str(sol).find('M') == -1):
-                if (str(sol).find('A') != -1) or (str(sol).find('E') != -1):
-                    i += 1
-                    file.write(str(sol) + '\n')
+                if (str(sol).find('A A') == -1) and (str(sol).find('E E') == -1) and (str(sol).find('E A') == -1) and (str(sol).find('A E') == -1) and (str(sol).find("A a") == -1) and (str(sol).find("A (a)") == -1):
+                    if (str(sol).find('A') != -1) or (str(sol).find('E') != -1):
+                        i += 1
+                        file.write(str(sol) + '\n')
+                        # print(sol, subs, path())
 
 
     print("Written file output/formulas_CTL.txt, Totale: ", nrew, "    Completed: ", i)
