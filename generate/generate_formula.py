@@ -38,7 +38,7 @@ def generate_LTL():
 
     with open('output/formulas_LTL.txt', 'w', newline='') as file:
         i = 0
-        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=5):
+        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=2):
             # if M is not in the solution, print it
             if (str(sol).find('M') == -1):
                 i += 1
@@ -55,21 +55,23 @@ def generate_CTL():
     maude.load(os.path.join(os.path.dirname(__file__), 'maude/generate_formula_CTL.maude'))
     m = maude.getCurrentModule()
 
-    t = m.parseTerm('A M')
+# why A M ?
+    t = m.parseTerm('M')
     pattern = m.parseTerm('M')
 
     with open('output/formulas_CTL.txt', 'w', newline='') as file:
         i = 0
-        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=3):
+        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=4):
             # if M is not in the solution, print it
             if (str(sol).find('M') == -1):
-                if (str(sol).find('A A') == -1) and (str(sol).find('E E') == -1) and (str(sol).find('E A') == -1) and (str(sol).find('A E') == -1) and (str(sol).find("A a") == -1) and (str(sol).find("A (a)") == -1):
-                    if (str(sol).find('A') != -1) or (str(sol).find('E') != -1):
-                        i += 1
-                        file.write(str(sol) + '\n')
+                # if (str(sol).find('A A') == -1) and (str(sol).find('E E') == -1) and (str(sol).find('E A') == -1) and (str(sol).find('A E') == -1) and (str(sol).find("A a") == -1) and (str(sol).find("A (a)") == -1):
+                    # if (str(sol).find('A') != -1) or (str(sol).find('E') != -1):
+                i += 1
+                file.write(str(sol) + '\n')
                         # print(sol, subs, path())
 
 
+# check if nrew and i are working properly because it seems that without any if condition they are differ.
     print("Written file output/formulas_CTL.txt, Totale: ", nrew, "    Completed: ", i)
 
 

@@ -17,6 +17,9 @@
 #include <bitset>
 #include <set>
 
+// Test equivalences of two automata by syntactically checking the body. If the labels of a state are different, then the automata are different.
+// This is not really efficient because the automatas are just isomophic hence equivalent but syntactically different.
+
 
 // write a program that from a ltl formula it generates a tgba automaton and then check if two automata are equivalent
 // g++ -std=c++17 spot_tgba_and_equiv.cc -lspot -o spot_tgba_and_equiv
@@ -110,7 +113,7 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile) {
 
       // create the TGBA
       spot::twa_graph_ptr original_automata = trans.run(original_pf);
-      print_hoa(original_stream, original_automata);
+      print_hoa(original_stream, original_automata); // print the automata to the stream
       original_string = original_stream.str();
       std::vector<std::string> original_body = parseBody(original_string);
 

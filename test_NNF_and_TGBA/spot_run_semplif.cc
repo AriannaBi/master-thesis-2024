@@ -20,7 +20,7 @@
 
 // Run inside folder testa-canonical_form
 // g++ -std=c++17 spot_run_semplif.cc -lspot -o spot_run_semplif
-// ./try
+// ./spot_run_semplif
 
 // Program that simplify the LTL formulas using spot library
 // The program receives a file with LTL formulas and output a file with the simplified formulas

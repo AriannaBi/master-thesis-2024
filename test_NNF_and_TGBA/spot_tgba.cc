@@ -16,10 +16,14 @@
 #include <spot/tl/unabbrev.hh>
 #include <bitset>
 #include <set>
+#include "emptiness/test_emptiness_automata.hh"
+
+// Test equivalences of two automata by syntactically checking the body. If the labels of a state are different, then the automata are different.
+// This is not really efficient because the automatas are just isomophic hence equivalent but syntactically different.
 
 
 // write a program that from a ltl formula it generates a tgba automaton and then check if two automata are equivalent
-// g++ -std=c++17 spot_tgba_SAT.cc -lspot -o spot_tgba_SAT
+// g++ -std=c++17 spot_tgba.cc -lspot -o spot_tgba
 
 
 // Helper function to parse the BODY section of the HOA string and return it
@@ -30,23 +34,23 @@
 // [0 & !1] 1
 // --END--
 // Return : ["State: 0", "[0 & 1] 2", "[0 & !1] 1"]
-std::vector<std::string> parseBody(const std::string& hoa) {
-    std::istringstream iss(hoa);
-    std::string line;
-    std::vector<std::string> bodyLines;
-    bool inBody = false;
-    while (std::getline(iss, line)) {
-        if (inBody) {
-            if (line == "--END--") {
-                break;
-            }
-            bodyLines.push_back(line);
-        } else if (line == "--BODY--") {
-            inBody = true;
-        }
-    }
-    return bodyLines;
-}
+// std::vector<std::string> parseBody(const std::string& hoa) {
+//     std::istringstream iss(hoa);
+//     std::string line;
+//     std::vector<std::string> bodyLines;
+//     bool inBody = false;
+//     while (std::getline(iss, line)) {
+//         if (inBody) {
+//             if (line == "--END--") {
+//                 break;
+//             }
+//             bodyLines.push_back(line);
+//         } else if (line == "--BODY--") {
+//             inBody = true;
+//         }
+//     }
+//     return bodyLines;
+// }
 
 // helper function to split the line by a delimiter into a vector of strings (all the mutation formulas)
 std::vector<std::string> split(std::string s, std::string delimiter) {
@@ -110,9 +114,9 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile) {
 
       // create the TGBA
       spot::twa_graph_ptr original_automata = trans.run(original_pf);
-      print_hoa(original_stream, original_automata);
+      print_hoa(original_stream, original_automata); // print the automata to the stream
       original_string = original_stream.str();
-      std::vector<std::string> original_body = parseBody(original_string);
+      
 
 
 
@@ -128,28 +132,28 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile) {
           spot::twa_graph_ptr mutation_aut = trans.run(mutation_formula);
           print_hoa(mutatio_stream, mutation_aut);
           mutation_string = mutatio_stream.str();
-          std::vector<std::string> mutation_body = parseBody(mutation_string);
-
-
-          // put all the UNSAT into a set and keep count of how many unsat are there
-          if ((original_body.size() == 1) & (original_body[0].compare("State: 0") == 0)) {
-            setUNSAT.insert(original_formula);
-            countUNSAT++;
+          
+          if (check_emptiness_two_automaton(original_pf, mutation_formula) == 1) {
+            std::cout << "The two automata are not equivalent " << '\n' << original_string << '\n' << mutation_string << std::endl;
+            std::cout << "Original formula: [" << original_formula << "] mutant formula [" << str <<"]" <<  std::endl;
+            std::cout << '\n' << std::endl;
           }
-          if ((mutation_body.size() == 1) & (mutation_body[0].compare("State: 0") == 0)) {
-            setUNSAT.insert(str);
-            countUNSAT++;
-          }
+
+          // test if two automatas are equivalent using emptiness checking. What does it do is to use an
+          // if (original_body == mutation_body) {
+          // } else {
+          //   // hasDifferentAutomata = true;
+          //   std::string union_original_mutant = original_formula + delimiter + str;
+          //   setFormulas.insert(union_original_mutant);
+          //   std::cout << "The two automata are not equivalent " << '\n' << original_string << '\n' << mutation_string << std::endl;
+          //   std::cout << "Original formula: [" << original_formula << "] mutant formula [" << mutation_formula <<"]" <<  std::endl;
+          //   std::cout << '\n' << std::endl;
+          // }
+
         }
 
       }
     }
-
-    // print the set of UNSAT formulas
-    for (const std::string& str : setUNSAT) {
-      std::cout << "The LTL formula [" << str << "] is UNSAT" << std::endl;
-    }
-    std::cout << "The number of UNSAT formulas is " << countUNSAT << std::endl;
 
     return nullptr;
 }

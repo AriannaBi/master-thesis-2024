@@ -1,10 +1,10 @@
-# Description: Check if two formulas are equivalent
+# Description: Check if two formulas LTL are equivalent
 # Implemented using spot library and spot function are_equivalent
 # Requirements: spot library 
 # Usage: python3 check_if_equivalent.py
 # I am using it with conda3 environment with spot library installed
 
-
+# called "check_if_equivalent.py" now "sanity_check_LTL.py"
 import spot
 # print(spot.version())
 
