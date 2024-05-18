@@ -4,11 +4,12 @@ mod gen_mutation_LTL is
    sort Formula .
 
 ---    defining the operators
-   ops "a" "b" "c" "d" "e" "f" true false : -> Formula .
-   ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
-   ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
+   op a : -> Formula .
+   --- ops "a" "b" "c" "d" "e" "f" true false : -> Formula .
+   --- ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
+   --- ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
 
-   op X : Formula -> Formula . ---    neXt
+   op X : Formula -> Formula . ---    next
    op ! : Formula -> Formula . ---    not
    op F : Formula -> Formula . ---    eventually
    op G : Formula -> Formula . ---    always

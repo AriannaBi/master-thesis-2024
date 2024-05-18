@@ -37,7 +37,7 @@ def filter_formulas(name_file):
     # delete lines with no mutants
     # split text into columns. Each columsn contains a formula
     df = pd.read_csv(f'output/mutants_{name_file}.txt', names=['text'])
-    split_columns = df['text'].str.split('   ', expand=True)
+    split_columns = df['text'].str.split(' ', expand=True)
     df_concatenated = pd.concat([df, split_columns], axis=1)
     df_concatenated.drop(columns=['text'], inplace=True) # drop text column
 
@@ -45,17 +45,17 @@ def filter_formulas(name_file):
 
     # discarded formulas because without LTL equivalences
     df_filter_discarded = df_concatenated[df_concatenated[1] == '']
-    df_filter_discarded.to_csv(f'output/discarded_mutants_{name_file}.txt', index=False,   header=False, sep='.', quoting=csv.QUOTE_NONE)
+    df_filter_discarded.to_csv(f'output/discarded_mutants_{name_file}.txt', index=False,   header=False, sep=' ', quoting=csv.QUOTE_NONE,  escapechar='\\')
     print(name_file, ": Number of discarded formulas because without mutants: {}/{}".format(len(df_filter_discarded), len(df_concatenated)))
-
+    print(f'Generated file output/discarded_mutants_{name_file}.txt')
 
 
     # formulas with LTL equivalences
     df_filter = df_concatenated[df_concatenated[1] != '']
     print(name_file,  ": Number of formulas with mutants: {}/{}".format(len(df_filter),len(df_concatenated)))
     df_filter = df_filter.reset_index(drop=True)
-    df_filter.to_csv(f'output/filtered_mutants_{name_file}.txt', index=False,   header=False, sep='.', quoting=csv.QUOTE_NONE)
-
+    df_filter.to_csv(f'output/filtered_mutants_{name_file}.txt', index=False,   header=False, sep=' ', quoting=csv.QUOTE_NONE,  escapechar='\\')
+    print(f'Generated file output/filtered_mutants_{name_file}.txt')
     
 
 
@@ -80,7 +80,7 @@ def generate_mutants_LTL():
         n_formula += 1
         t = m.parseTerm(line)
         # put 3 spaces to separate formula and mutants
-        file_out.write(str(t) + '   ' + "" )
+        file_out.write(str(t) + ' ' + "" )
         pattern = m.parseTerm('M')
 
         
@@ -90,7 +90,7 @@ def generate_mutants_LTL():
             # if (str(sol).find('M') == -1) and str(sol) != str(t): #exclude the formula itself from the mutants
                 n_mutant += 1
                 # put 3 spaces to separate mutants
-                file_out.write(str(sol) +  '   ' + "")
+                file_out.write(str(sol) +  ' ' + "")
         file_out.write('\n')
 
     print("LTL: Generated file output/mutants_LTL.txt with the mutants of the formulas. \n \t Number original formulas: {} \n \t Number of mutants: {}".format(n_formula, n_mutant))
@@ -125,7 +125,7 @@ def generate_mutants_CTL():
         n_formula += 1
         t = m.parseTerm(line)
         # put 3 spaces to separate formula and mutants
-        file_out.write(str(t) + '   ' + "" )
+        file_out.write(str(t) + ' ' + "" )
         pattern = m.parseTerm('M')
 
         for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=1):
@@ -133,10 +133,10 @@ def generate_mutants_CTL():
             # if mutant is without M and if original is different from mutant
             if (str(sol).find('M') == -1) and str(sol) != str(t):
                 # if mutant contains A or E 
-                if str(sol).find('A') != 1 or str(sol).find('E') != 1:
-                    n_mutant += 1
+                # if str(sol).find('A') != 1 or str(sol).find('E') != 1:
+                n_mutant += 1
                     # put 3 spaces to separate mutants
-                    file_out.write(str(sol) +  '   ' + "")
+                file_out.write(str(sol) +  ' ' + "")
         file_out.write('\n')
 
     print("CTL: Generated file output/mutants_CTL.txt with the mutants of the formulas. \n \t Number original formulas: ", n_formula, "\n \t Number of mutants: ", n_mutant)

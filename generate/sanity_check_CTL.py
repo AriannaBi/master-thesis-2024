@@ -3,6 +3,7 @@
 # This script generates a sanity check for the CTL model checker.
 
 import os
+import subprocess
 # python3 sanity_check_CTL.py
 # read file with formulas and relative mutants
 
@@ -20,37 +21,28 @@ Lines = file_in.readlines()
 
 n_mutants = 0
 n_formulas = 0
-for line in Lines[:20]:
+for line in Lines:
     n_formulas += 1
-
-    # line = f'"{line.strip()}"'
-    
-    # os.system(f"./ctl-sat {line}")
-    array_formula = line.split('.')[:-1] #last element is \n
+    array_formula = line.split(' ')[:-1] #last element is \n
     array_formula = [x for x in array_formula if x] #remove empty elements ''
     print(array_formula)
     original_formula = array_formula[0]
     f = original_formula
-    # f = f'"{original_formula.strip()}"'
     mutants = array_formula[1:]
+
     for mutant in mutants:
         n_mutants += 1
         g = mutant
-        # g = f'"{mutant.strip()}"'
         check_UNSAT = f'"~((({f}) -> ({g})) ^ (({g}) -> ({f})))"'
-        # check_UNSAT_1 = f'"~({f} -> {g})"'
-        # check_UNSUT_2 = f'"~({g} -> {f}))"'
-        # print(check_UNSAT)
-        os.system(f"./ctl-sat {check_UNSAT}")
-        # os.system(f"./ctl-sat {check_UNSUT_2}")
-        # are_eq = spot.are_equivalent(replace_atomic_proposition(original_formula), replace_atomic_proposition(mutant))
-        # if are_eq == False:
-        #     print(mutant)
-        #     print(original_formula)
-        #     print(are_eq)
+        # os.system(f"./ctl-sat {check_UNSAT}")
+        command = f"./ctl-sat {check_UNSAT}"
+        result = subprocess.run(command, shell=True, capture_output=True, text=True)
+        # print(result.stdout)
+        if result.returncode == 0:
+            # if result not contain ("is NOT satisfiable")
+            if "is satisfiable" in result.stdout or "Error" in result.stdout:
+                print("Error: ", result.stdout)
+        else:
+            # Print an error message
+            print("Error executing command:", result.stderr)
 
-# print("Checked ", n_formulas, "formulas and ", n_mutants, " mutants")
-# ~(((~(AF a))^(~(AF a)) -> (~(AF a))^(EG ~(a))) v ((~(AF a))^(EG ~(a)) -> (~(AF a))^(~(AF a)))
-
-
-# "~(((~( ( EFEGa ^ AG(a->b) ) -> EFEGb )) -> (~( ( EFEGa ^ AG(a->b) ) -> EFEGb ))) v ((~( ( EFEGa ^ AG(a->b) ) -> EFEGb )) -> (~( ( EFEGa ^ AG(a->b) ) -> EFEGb ))))"

@@ -38,7 +38,7 @@ def generate_LTL():
 
     with open('output/formulas_LTL.txt', 'w', newline='') as file:
         i = 0
-        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=2):
+        for sol, subs, path, nrew in t.search(type=maude.ANY_STEPS, target=pattern, depth=4):
             # if M is not in the solution, print it
             if (str(sol).find('M') == -1):
                 i += 1

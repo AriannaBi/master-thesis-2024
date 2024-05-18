@@ -17,11 +17,14 @@ dict_atomic_proposition.update({'s!=' + str(i): 'replnot' + str(i) for i in rang
 # print(dict_atomic_proposition)
 
 
+
 # replace atomic proposition in formula
 def replace_atomic_proposition(formula):
     for key in dict_atomic_proposition:
         formula = formula.replace(key, dict_atomic_proposition[key])
     return formula
+
+
 
 # test replace_atomic_proposition and replace_back_atomic_proposition
 formula1 = replace_atomic_proposition("((s=0)U(s=1))|((s=0)U(s=3))")
@@ -31,7 +34,7 @@ assert are_eq == True
 #############################################
 
 
-file_in = open('output/mutants_LTL.txt', 'r') #read formula and relative mutants
+file_in = open('output/filtered_mutants_LTL.txt', 'r') #read formula and relative mutants
 Lines = file_in.readlines()
 
 n_mutants = 0

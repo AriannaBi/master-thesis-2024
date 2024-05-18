@@ -9,6 +9,8 @@
 #include <vector>
 #include <spot/tl/unabbrev.hh>
 #include <bitset>
+#include <string>
+#include <algorithm>
 
 
 
@@ -18,16 +20,17 @@
 // https://spot.lre.epita.fr/tut01.html
 // https://spot.lre.epita.fr/tut.html
 
-// Run inside folder testa-canonical_form
-// g++ -std=c++17 spot_run_semplif.cc -lspot -o spot_run_semplif
-// ./spot_run_semplif
+// Run inside folder A_simplific_module
+// g++ -std=c++17 simplification.cc -lspot -o simplification
+// ./simplification
 
 // Program that simplify the LTL formulas using spot library
 // The program receives a file with LTL formulas and output a file with the simplified formulas
 // The program receives the options to simplify the formulas
 // The program also test all the options combination for a given formula
-// The program output the simplified formula for each combination of options in the output/ folfer
+// The program output the simplified formula for each combination of options in the output/ folder
 
+namespace fs = std::filesystem;
 
 int simplify_formulas(std::string readFile, std::string outFile, bool basics, bool synt_impl, bool event_univ, bool containment_checks, bool containment_checks_stronger, bool nenoform_stop_on_boolean, bool reduce_size_strictly, bool boolean_to_isop, bool favor_event_univ) {
 
@@ -64,8 +67,20 @@ int simplify_formulas(std::string readFile, std::string outFile, bool basics, bo
           // run abbreviator without <->, ->, M, R, W and Xor
           spot::unabbreviator unabbrev("eiMRW^");
           simplified_phi = unabbrev.run(simplified_phi);
-
-          outputFile << "   " << simplified_phi;
+          std::string simplified_phi_str = spot::str_psl(simplified_phi, true);
+          // remove space in between the formula
+          simplified_phi_str.erase(std::remove(simplified_phi_str.begin(), simplified_phi_str.end(), ' '), simplified_phi_str.end());
+          // add space only before and after the U because the parser can't parse aU!a or aU a
+          // however, it can read a|(aUXa), hence it doesn't work only when there is a not operator after U, or the spaces are not both sides of U
+          // std::cout << simplified_phi_str << std::endl;
+          // std::string::size_type pos = simplified_phi_str.find("U!");
+          // if (pos != std::string::npos) {
+          //   simplified_phi_str.replace(pos, 2, " U !");
+          // }
+          // std::cout << simplified_phi_str << std::endl;
+          
+          outputFile <<  "   " << simplified_phi_str;
+          
 
         }
         outputFile <<  std::endl;
@@ -129,6 +144,19 @@ void test_all_options_combination(std::string formula) {
     }
 }
 
+// Function to remove spaces within a formula
+std::string remove_internal_spaces(const std::string& formula) {
+    std::string result;
+    // formula.erase(std::remove(formula.begin(), formula.end(), ' '), formula.end());
+    // remove space
+    for (char c : formula) {
+        if (c != ' ') {
+            result += c;
+        }
+    }
+    return result;
+}
+
 int main() {
   // create array with "spot_event_univ.txt", "spot_boolean_to_isop.txt", "spot_reduce_basic.txt", "spot_no_options.txt"
   // std::string files[] = {"spot_event_univ.txt", "spot_boolean_to_isop.txt", "spot_reduce_basic.txt", "spot_no_options.txt"};
@@ -143,7 +171,7 @@ int main() {
   bool reduce_size_strictly = false;
   bool boolean_to_isop = false;
   bool favor_event_univ = false;
-  simplify_formulas("filtered_mutants_LTL.txt", "output/spot_no_options.txt", basics, synt_impl, event_univ, containment_checks, containment_checks_stronger, nenoform_stop_on_boolean, reduce_size_strictly, boolean_to_isop, favor_event_univ);
+  // simplify_formulas("filtered_mutants_LTL.txt", "output/spot_no_options.txt", basics, synt_impl, event_univ, containment_checks, containment_checks_stronger, nenoform_stop_on_boolean, reduce_size_strictly, boolean_to_isop, favor_event_univ);
   
 
   // reduce basic
@@ -158,7 +186,7 @@ int main() {
   favor_event_univ = false;
   // simplify_formulas("filtered_mutants_LTL.txt", "output/spot_basics_2.txt", basics, synt_impl, event_univ, containment_checks, containment_checks_stronger, nenoform_stop_on_boolean, reduce_size_strictly, boolean_to_isop, favor_event_univ);
   
-   // synactic implications (cheap way, sometimes it doesn't work)
+  // synactic implications (cheap way, sometimes it doesn't work)
   basics = false;
   synt_impl = true;
   event_univ = false;
@@ -205,12 +233,29 @@ int main() {
   reduce_size_strictly = true;
   boolean_to_isop = true;
   favor_event_univ = true;
-  // simplify_formulas("filtered_mutants_LTL.txt", "output/spot_all_options.txt", basics, synt_impl, event_univ, containment_checks, containment_checks_stronger, nenoform_stop_on_boolean, reduce_size_strictly, boolean_to_isop, favor_event_univ);
+
+  std::string folder_name = "output";
+
+  // Check if the folder exists
+  if (fs::exists(folder_name)) {
+      // Remove the existing folder and its contents
+      fs::remove_all(folder_name);
+      std::cout << "Existing folder '" << folder_name << "' deleted." << std::endl;
+  }
+
+  // Create a new empty folder
+  fs::create_directory(folder_name);
+  std::cout << "New folder '" << folder_name << "' created." << std::endl;
+
+
+  // No issue if the folder doesn't exists. It will be generated
+  simplify_formulas("../generate/output/filtered_mutants_LTL.txt", "output/spot_all_options.txt", basics, synt_impl, event_univ, containment_checks, containment_checks_stronger, nenoform_stop_on_boolean, reduce_size_strictly, boolean_to_isop, favor_event_univ);
   
 
-  std::string formula = "(G(X(\"a\")))&(G(\"a\"))"; //GX(a)&G(a)
-  std::string formula2 = "G((X(\"a\"))&(\"a\"))"; //G(X(a)&a)
+  // std::string formula = "(G(X(\"a\")))&(G(\"a\"))"; //GX(a)&G(a)
+  // std::string formula2 = "G((X(\"a\"))&(\"a\"))"; //G(X(a)&a)
   // test_all_options_combination(formula2);
+
 
   return 0;
 }

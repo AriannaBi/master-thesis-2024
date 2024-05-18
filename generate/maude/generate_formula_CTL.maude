@@ -1,29 +1,39 @@
 
 
 mod gen_formula_CTL is
-   --- protecting BOOL .
-   sort Formula PathFormula .
+   sort Formula .
 
    --- atomic propositions
-   ops a "b" "c" "d" "e" "f" true false : -> Formula .
-   ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
-   ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
+   op a : -> Formula .
+   --- ops a "b" "c" "d" "e" "f" true false : -> Formula .
+   --- ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
+   --- ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
 
-   op ! : Formula -> Formula . ---    not
+   op ~ : Formula -> Formula . ---    not
    op X : Formula -> Formula . ---    next
    op F : Formula -> Formula . ---    eventually
    op G : Formula -> Formula . ---    always
 
-   op (_)&(_) : Formula Formula -> Formula . ---    and
-   op (_)|(_) : Formula Formula -> Formula . ---    or
+   op (_)^(_) : Formula Formula -> Formula . ---    and
+   op (_)v(_) : Formula Formula -> Formula . ---    or
    op (_)U(_) : Formula Formula -> Formula . ---    until
-   op (_)=>(_) : Formula Formula -> Formula . ---    implication
-   op (_)<=>(_) : Formula Formula -> Formula . ---    implication
+   op (_)->(_) : Formula Formula -> Formula . ---    implication
+   op (_)<->(_) : Formula Formula -> Formula . ---    implication
    --- CTL
-   op A_ : Formula -> Formula . ---    path quantifier
-   op E_ : Formula -> Formula . ---    path quantifier
+   op AX(_) : Formula -> Formula . ---    path quantifier
+   op AG(_) : Formula -> Formula . ---    path quantifier
+   op AF(_) : Formula -> Formula . ---    path quantifier
+   op A((_)U(_)) : Formula Formula -> Formula . ---    path quantifier
+   --- op A~(_) : Formula -> Formula . ---    path quantifier
    
-   vars M R : Formula .
+   op EX(_) : Formula -> Formula . ---    path quantifier
+   op EG(_) : Formula -> Formula . ---    path quantifier
+   op EF(_) : Formula -> Formula . ---    path quantifier
+   op E((_)U(_)) : Formula Formula -> Formula . ---    path quantifier
+   --- op E~(_) : Formula -> Formula . ---    path quantifier
+   --- op EX_ : Formula -> Formula . ---    path quantifier
+   
+   vars M : Formula .
 
 --- You apply the rule once, and you get "A X(a)".
 --- Now, according to the rule, "A X(a)" matches the pattern "M", so the rule can be applied again.
@@ -33,29 +43,39 @@ mod gen_formula_CTL is
 ---       if M = a .
 
    --- Formula operators
-   rl [next_A] : M => A X(M) .
-      --- if  M =/= A M  .
-      --- if M = X(M) .
-   --- rl [jjkkkk] : R => 
-   --- rl [next_E] : M => E X(M) .
-   --- rl [not_A] : M => A !(M) .
-   --- rl [not_E] : M => E !(M) .
-   --- rl [always_A] : M => A G(M) .
-   --- rl [always_E] : M => E G(M) .
-   --- rl [eventually_A] : M => A F(M) .
-   --- rl [eventually_E] : M => E F(M) .
+   rl [next_A] : M => AX(M) .
+   rl [next_E] : M => EX(M) .
+   rl [not] : M => ~(M) .
+   rl [not] : M => ~(M) .
+   rl [always_A] : M => AG(M) .
+   rl [always_E] : M => EG(M) .
+   rl [eventually_A] : M => AF(M) .
+   rl [eventually_E] : M => EF(M) .
+
+   rl [and] : M => (M)^(M) .
+   rl [or] : M => (M)v(M) .
+   rl [until_A] : M => A((M)U(M)) .
+   rl [until_E] : M => E((M)U(M)) .
+   --- rl [and_A] : M => AX((M)&(M)) .
+   --- rl [and_E] : M => E((M)&(M)) .
+   --- rl [or_A] : M => AX((M)|(M)) .
+   --- rl [or_E] : M => E(M)|(M) .
+   --- rl [until_A] : M => A(M)U(M) .
+   --- rl [until_E] : M => E(M)U(M) .
+
+   --- rl [iff_A] : M => A(M)<=>(M) .
+   --- rl [iff_E] : M => E(M)<=>(M) .
+   --- rl [implies_A] : M => A(M)=>(M) .
+   --- rl [implies_E] : M => E(M)=>(M) .
+
+   
 
 
-   rl [and_A] : M => A X((M) & (M)) .
-   --- rl [and_E] : M => E((M) & (M)) .
 
-
-   --- rl [or_A] : M => A((M) | (M)) .
-   --- rl [or_E] : M => E(M) | (M) .
-
-
-   --- rl [until_A] : M => A(M) U (M) .
-   --- rl [until_E] : M => E(M) U (M) .
+   --- rl [implies] : M => (M)=>(M) .
+   --- rl [iff] : M => (M)<=>(M) .
+   --- rl [true] : M => true .
+   --- rl [false] : M => false .
 
 
 ---   --- Formula operators
