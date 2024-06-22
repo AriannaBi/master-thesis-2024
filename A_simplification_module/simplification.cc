@@ -161,6 +161,21 @@ int main() {
   // create array with "spot_event_univ.txt", "spot_boolean_to_isop.txt", "spot_reduce_basic.txt", "spot_no_options.txt"
   // std::string files[] = {"spot_event_univ.txt", "spot_boolean_to_isop.txt", "spot_reduce_basic.txt", "spot_no_options.txt"};
 
+
+  std::string folder_name = "output";
+
+  // Check if the folder exists
+  if (fs::exists(folder_name)) {
+      // Remove the existing folder and its contents
+      fs::remove_all(folder_name);
+      std::cout << "Existing folder '" << folder_name << "' deleted." << std::endl;
+  }
+
+  // Create a new empty folder
+  fs::create_directory(folder_name);
+  std::cout << "New folder '" << folder_name << "' created." << std::endl;
+
+
   //no options
   bool basics = false;
   bool synt_impl = false;
@@ -233,21 +248,6 @@ int main() {
   reduce_size_strictly = true;
   boolean_to_isop = true;
   favor_event_univ = true;
-
-  std::string folder_name = "output";
-
-  // Check if the folder exists
-  if (fs::exists(folder_name)) {
-      // Remove the existing folder and its contents
-      fs::remove_all(folder_name);
-      std::cout << "Existing folder '" << folder_name << "' deleted." << std::endl;
-  }
-
-  // Create a new empty folder
-  fs::create_directory(folder_name);
-  std::cout << "New folder '" << folder_name << "' created." << std::endl;
-
-
   // No issue if the folder doesn't exists. It will be generated
   simplify_formulas("../generate/output/filtered_mutants_LTL.txt", "output/spot_all_options.txt", basics, synt_impl, event_univ, containment_checks, containment_checks_stronger, nenoform_stop_on_boolean, reduce_size_strictly, boolean_to_isop, favor_event_univ);
   

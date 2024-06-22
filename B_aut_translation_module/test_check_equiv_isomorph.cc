@@ -17,15 +17,20 @@
 #include <bitset>
 #include <set>
 #include <spot/twaalgos/are_isomorphic.hh>
-#include "emptiness/test_emptiness_automata.hh"
 #include <spot/twaalgos/contains.hh>
 
-// Test equivalences of two automata by syntactically checking the body. If the labels of a state are different, then the automata are different.
-// This is not really efficient because the automatas are just isomophic hence equivalent but syntactically different.
+
+// USED TO COMPARE TWO AUTOMATAS GENERATED FROM TWO DIFFERENT FORMULAS AND WITH SPOT TRANSALTOR
+// Test equivalences and isomorphism of two automata.
+// Write a program that from a ltl formula it generates a tgba automaton. So it does that with a formula and a mutant and
+// then check if the two automata are equivalent.
 
 
-// write a program that from a ltl formula it generates a tgba automaton and then check if two automata are equivalent
-// g++ -std=c++17 spot_tgba.cc -lspot -o spot_tgba
+// Formulas are original and mutant, and the translator is the spot translator same for both formulas. 
+// This means that we test whether the translator produced equivalent automatas when input two different but equivalent formulas.
+
+
+// g++ -std=c++17 test_check_equiv_isomorph.cc -lspot -o test_check_equiv_isomorph
 
 
 // helper function to split the line by a delimiter into a vector of strings (all the mutation formulas)
@@ -87,6 +92,7 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile, std::string delimiter) {
       
       std::string original_formula = strings[0];
       spot::formula original_pf = spot::parse_formula(original_formula);
+      
 
 
       // create the TGBA
@@ -103,17 +109,13 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile, std::string delimiter) {
           std::string mutation_string = "";
           std::stringstream mutatio_stream;
           spot::formula mutation_formula = spot::parse_formula(str);
-
+          std::cout << original_pf << " and " << str << std::endl;
 
           // create the TGBA
           spot::twa_graph_ptr mutation_automata = trans.run(mutation_formula);
           print_hoa(mutatio_stream, mutation_automata);
           mutation_string = mutatio_stream.str();
           
-          // Test if two automatas are isomorphic by using the spot function spot::are_isomorphic
-          // std::cout << "The formula and mutant: " << original_formula << " " << str << std::endl;
-          // std::cout << spot::isomorphism_checker::are_isomorphic(original_automata,mutation_automata) << std::endl;
-
           // Test if two automatas are equivalent with the spot function spot::are_equivalent
           if (!spot::isomorphism_checker::are_isomorphic(original_automata,mutation_automata)){
             std::cout << "The two automata are not isomorphic " << '\n' << original_string << '\n' << mutation_string << std::endl;
@@ -122,7 +124,6 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile, std::string delimiter) {
             exist_not_isomorphic = true;
           }
           
-
           // Test if two automatas are equivalent with the spot function spot::are_equivalent
           if (!spot::are_equivalent(original_automata,mutation_automata)){
             std::cout << "The two automata are not equivalent " << '\n' << original_string << '\n' << mutation_string << std::endl;
@@ -156,19 +157,19 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile, std::string delimiter) {
 
 int main()
 {
-  // spot::twa_graph_ptr a1 = ltl_2_tgba("../A_simplification_module/output/not_equal_simplif_all_options.txt", " ");
-  spot::twa_graph_ptr a1 = ltl_2_tgba("../A_simplification_module/output/spot_all_options.txt", "   ");
+  spot::twa_graph_ptr a1 = ltl_2_tgba("../A_simplification_module/output/not_equal_simplif_all_options.txt", " ");
+  // ltl_2_tgba("../A_simplification_module/output/spot_all_options.txt", "   ");
               // XGaUGa XGa isomorphic 0
 
 
-  // spot::translator trans;
-  // trans.set_type(spot::postprocessor::TGBA);
-  // trans.set_pref(spot::postprocessor::Deterministic);
-  // trans.set_level(spot::postprocessor::High);
+//   spot::translator trans;
+//   trans.set_type(spot::postprocessor::TGBA);
+//   trans.set_pref(spot::postprocessor::Deterministic);
+//   trans.set_level(spot::postprocessor::High);
 
 
-//   std::string original_formula = "X!a U !a";
-//   std::string mutant_formula = "X!a U !a";
+//   std::string original_formula = "(c U a) & (a U (b U c))";
+//   std::string mutant_formula = "((a) U ((b) U (c))) & ((c) U (a))";
   
 //   spot::formula original_pf = spot::parse_formula(original_formula);
 //   spot::formula mutant_pf = spot::parse_formula(mutant_formula);
@@ -177,7 +178,7 @@ int main()
 //   spot::twa_graph_ptr mutant_automata = trans.run(mutant_pf);
 
 // // 1 are isomorphic, meaning they have the same structure
-//   std::cout << spot::isomorphism_checker::are_isomorphic(original_automata,mutant_automata) << std::endl;
+//   std::cout << spot::isomorphism_checker::are_isomorphic(original_automata, mutant_automata) << std::endl;
 
   return 0;
 }

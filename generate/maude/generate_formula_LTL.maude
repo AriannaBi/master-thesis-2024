@@ -3,11 +3,8 @@
 mod gen_formula_LTL is
    sort Formula .
 
-   --- atomic propositions (ap)
-   op a : -> Formula .
-   --- ops a "b" "c" "d" "e" "f" true false : -> Formula .
-   --- ops s=0 s=1 s=2 s=3 s=4 s=5 s=6 : -> Formula .
-   --- ops s!=0 s!=1 s!=2 s!=3 s!=4 s!=5 s!=6 : -> Formula .
+   ops a b c : -> Formula .
+   
 
    --- LTL operators
    op ! : Formula -> Formula . ---    not
@@ -41,6 +38,8 @@ mod gen_formula_LTL is
 
    ---   Atomic operators
    rl [a] : M => a .
+   rl [b] : M => b .
+   rl [c] : M => c .
    --- rl [b] : M => "b" .
    --- rl [b] : M => "c" .
    --- rl [s=0] : M => s=0 .

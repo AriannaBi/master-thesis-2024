@@ -1,0 +1,72 @@
+
+
+mod gen_formula_LTL is
+   sort Formula .
+
+   ops a b c True False : -> Formula .
+   
+
+   --- LTL operators
+   op Not(_) : Formula -> Formula . 
+   op Or(_,_) : Formula Formula -> Formula . 
+   op And(_,_) : Formula Formula -> Formula .
+   op Implies(_,_) : Formula Formula -> Formula .
+   op Xor(_,_) : Formula Formula -> Formula .
+   op If(_,_,_) : Formula Formula Formula -> Formula .
+   
+   ---   Path quantifiers
+   vars M N P : Formula .
+
+   --- Formula operators
+   rl [double_negation] : Not(Not(M)) => M .
+
+    rl [de_morgans_1] : Not(And(M,N)) => Or(Not(M),Not(N)) .
+    rl [de_morgans_2] : Not(Or(M,N)) => And(Not(M),Not(N)) .
+
+    rl [commutative_and] : And(M,N) => And(N,M) .
+    rl [commutative_or] : Or(M,N) => Or(N,M) .
+
+    rl [associative_and_1] : And(And(M,N),P) => And(M,And(N,P)) .
+    rl [associative_and_2] : And(M,And(N,P)) => And(And(M,N),P) .
+    rl [associative_or_1] : Or(Or(M,N),P) => Or(M,Or(N,P)) .
+    rl [associative_or_2] : Or(M,Or(N,P)) => Or(Or(M,N),P) .
+
+    rl [distributive_and_over_or] : And(M,Or(N,P)) => Or(And(M,N),And(M,P)) .
+    rl [distributive_or_over_and] : Or(M,And(N,P)) => And(Or(M,N),Or(M,P)) .
+
+    rl [identity_and] : And(M,True) => M .
+    rl [identity_or] : Or(M,False) => M .
+
+    rl [domination_and] : And(M,False) => False .
+    rl [domination_or] : Or(M,True) => True .
+
+    rl [idempotent_and] : And(M,M) => M .
+    rl [idempotent_or] : Or(M,M) => M .
+
+    rl [negation_or] : Or(M,Not(M)) => True .
+    rl [negation_and] : And(M,Not(M)) => False .
+
+    rl [implication] : Implies(M,N) => Or(Not(M),N) .
+
+    
+    rl [xor_commutative] : Xor(M, N) => Xor(N, M) .
+    rl [xor_associative] : Xor(Xor(M, N), P) => Xor(M, Xor(N, P)) .
+    rl [xor_idempotence] : Xor(M, M) => False .
+    rl [xor_identity] : Xor(M, False) => M .
+    --- rl [xor_negation] : Not(Xor(M, N)) => (M == N) .
+
+    
+    rl [if_true] : If(True, N, P) => N .
+    rl [if_false] : If(False, N, P) => P .
+    rl [if_idempotence] : If(M, N, N) => N .
+
+    --- rl [biconditional_1] : Equiv(M,N) => And(Implies(M,N),Implies(N,M)) .
+    --- rl [biconditional_2] : Equiv(M,N) => Or(And(M,N),And(Not(M),Not(N))) .
+
+--- axioms that doesn't produce the same formula after simplification. 
+    rl [xor_def] : Xor(M, N) => And(Or(M, N), Not(And(M, N))) . 
+    rl [if_def] : If(M, N, P) => Or(And(M, N), And(Not(M), P)) .
+   
+
+
+endm

@@ -11,64 +11,6 @@ import shutil
 #     os.mkdir(os.path.join(base_path))
 
 
-
-'''
-# "[] (s=0) -> fast : (s'=1) + slow : (s'=4);"
-# keep states (s=1) etc. and reconstruct line with & instead of +
-def remove_probability_model(line):
-    # print("LINEEEEEEE", line)
-
-    right = line.split('->')[1]
-    left = line.split('->')[0]
-
-    pattern = r'\((?:[^()]+|\([^()]*\))*\)' #match everything between parentheses
-    # Use re.findall() to find all occurrences of the pattern in the string
-    matches = re.findall(pattern, right)
-    reconstruct_string = left + '-> '
-    for match in matches:
-        reconstruct_string += match + " & "
-    # if line ends with ; then remove the last two characters and add ;
-    if line.find(';') != -1:
-        # remove the last two characters and add ;
-        reconstruct_string = reconstruct_string[:-2] + '; \n'
-    else:
-        reconstruct_string = reconstruct_string[:-2] + ' \n'
-    return reconstruct_string
-    
-
-def remove_probability_without_arrow(line):
-    # print("LINEEEEEEE without arrow", line)
-
-    # if : is found in the line
-    if line.find(':') != -1:
-        right = line.split(':')[1]
-        # left = line.split(':')[0]
-
-        pattern = r'\((?:[^()]+|\([^()]*\))*\)' #match everything between parentheses
-        # Use re.findall() to find all occurrences of the pattern in the string
-        matches = re.findall(pattern, right)
-        reconstruct_string = '& '.join(matches)
-        # for match in matches:
-        #     reconstruct_string += match + " & "
-        # if line ends with ; then remove the last two characters and add ;
-        # if line.find(';') != -1:
-        # print("reconstruct_string111", reconstruct_string)
-        if line.find(';') != -1:
-            reconstruct_string = '& ' + reconstruct_string + '; \n'
-        else:
-            reconstruct_string = '& ' + reconstruct_string + ' \n'
-        # print("reconstruct_string222", reconstruct_string)
-
-        return reconstruct_string
-    else:
-        return line
-
-'''
-
-
-
-
-
 # if it is const int ...; then I need to take the name and replace it with a number
 # or i can just run it in a for loop without doing anything and working only on probabilities
 
