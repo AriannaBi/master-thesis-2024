@@ -71,10 +71,19 @@ def filter_formulas(name_file):
     # name is output/filtered_mutants_CTL'
     # while in the main function is output/mutants_CTL
 
-
+def fill_set_formulas(file_name_input):
+    set_formulas = set()
+    file_in = open(file_name_input, 'r') #read formula
+    Lines = file_in.readlines()
+    for line in Lines:
+        line = line[:-1].strip() #remove \n and spaces
+        set_formulas.add(line)
+    file_in.close()
+    return set_formulas
 
 # generate mutants of LTL
 def generate_mutants_LTL(ap, file_name_input, file_name_output):
+    num_already_existing_mutants = 0
     modify_maude_file_with_ap(ap)
 
     maude.init(advise=True)
@@ -93,6 +102,7 @@ def generate_mutants_LTL(ap, file_name_input, file_name_output):
     for line in Lines:
         n_formula += 1
         t = m.parseTerm(line)
+        set_already_existing_formula = fill_set_formulas('output/formulas_LTL.txt')
         # put 3 spaces to separate formula and mutants
         file_out.write(str(t) + ' ' + "" )
         pattern = m.parseTerm('M')
@@ -102,12 +112,19 @@ def generate_mutants_LTL(ap, file_name_input, file_name_output):
             # if M is not in the solution, print it
             if (str(sol).find('M') == -1) and str(sol) != str(t):
             # if (str(sol).find('M') == -1) and str(sol) != str(t): #exclude the formula itself from the mutants
-                n_mutant += 1
-                # put 3 spaces to separate mutants
-                file_out.write(str(sol) +  ' ' + "")
+                clean_sol = str(sol).strip()
+                # print(clean_sol)
+                if clean_sol not in set_already_existing_formula:
+                    n_mutant += 1
+                    # put 3 spaces to separate mutants
+                    file_out.write(str(sol) +  ' ' + "")
+                else:
+                    num_already_existing_mutants+=1
+                set_already_existing_formula.add(clean_sol)
+
         file_out.write('\n')
 
-    print("LTL: Generated file output/mutants_LTL.txt with the mutants of the formulas. \n \t Number original formulas: {} \n \t Number of mutants: {}".format(n_formula, n_mutant))
+    print("LTL: Generated file output/mutants_LTL.txt with the mutants of the formulas. \n \t Number original formulas: {} \n \t Number of mutants: {} \n \t Number of duplicates: {}".format(n_formula, n_mutant, num_already_existing_mutants))
 
     file_in.close()
     file_out.close()
@@ -119,6 +136,7 @@ def generate_mutants_LTL(ap, file_name_input, file_name_output):
 
 # generate mutants of CTL
 def generate_mutants_CTL(ap, file_name_input, file_name_output):
+    num_already_existing_mutants = 0
     modify_maude_file_with_ap(ap)
     # print('\n')
     maude.init(advise=True)
@@ -139,6 +157,7 @@ def generate_mutants_CTL(ap, file_name_input, file_name_output):
     for line in lines:
         n_formula += 1
         t = m.parseTerm(line)
+        set_already_existing_formula = fill_set_formulas('output/formulas_CTL.txt')
         # put 3 spaces to separate formula and mutants
         file_out.write(str(t) + ' ' + "" )
         pattern = m.parseTerm('M')
@@ -147,14 +166,19 @@ def generate_mutants_CTL(ap, file_name_input, file_name_output):
 
             # if mutant is without M and if original is different from mutant
             if (str(sol).find('M') == -1) and str(sol) != str(t):
+                clean_sol = str(sol).strip()
                 # if mutant contains A or E 
                 # if str(sol).find('A') != 1 or str(sol).find('E') != 1:
-                n_mutant += 1
+                if clean_sol not in set_already_existing_formula:
+                    n_mutant += 1
                     # put 3 spaces to separate mutants
-                file_out.write(str(sol) +  ' ' + "")
+                    file_out.write(str(sol) +  ' ' + "")
+                else:
+                    num_already_existing_mutants+=1
+                set_already_existing_formula.add(clean_sol)
         file_out.write('\n')
 
-    print("CTL: Generated file output/mutants_CTL.txt with the mutants of the formulas. \n \t Number original formulas: ", n_formula, "\n \t Number of mutants: ", n_mutant)
+    print("CTL: Generated file output/mutants_CTL.txt with the mutants of the formulas. \n \t Number original formulas: ", n_formula, "\n \t Number of mutants: ", n_mutant, "\n \t Number of duplicates: ", num_already_existing_mutants)
 
     file_in.close()
     file_out.close()

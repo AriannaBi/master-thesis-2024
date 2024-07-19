@@ -49,33 +49,41 @@ def filter_lines(name_file):
     
     df_concatenated.drop(columns=['text'], inplace=True) # drop text column
     array_df_to_drop = []
-
-    # print(df_concatenated)
+    aa = False
+    
     # Check if all values in each row are equal (excluding None values)
     # for each row, print the element
     df_concatenated_copy = df_concatenated.copy()
-
+    array_non_equal = []
     for index_row, row in df_concatenated_copy.iterrows():
         num_total_formula += 1
-        # print(row)
         row_array = row.values
         filtered_list = list(filter(lambda x: x is not None, row_array))
         filtered_list = filtered_list[1:]
+        # for each element in the row, check if they are equal
         for index_col,elem in enumerate(filtered_list):
             num_total_formula += 1
             # If i want to check if thet are equivalent, use spot.are_equivalent.
             # Now I am checking that they are equal
             if elem != filtered_list[0]:
+                # print(elem)
                 num_not_equal += 1
                 array_df_to_drop.append(index_row)
                 print("The two simplified formulas are not equal [", elem, "] [", filtered_list[0], "] at index [", index_row, "] [", index_col, "]")
                 non_simplif_formula, non_simplif_mutant = read_original_formulas('../generate/output/filtered_mutants_LTL.txt', index_row, index_col)
                 print("The two formulas not simplified [", non_simplif_mutant, "] [",  non_simplif_formula, "]")
                 print('\n')
+                aa = True
+                array_non_equal.append(non_simplif_formula)
+                array_non_equal.append(non_simplif_mutant)
                 break
+        if aa:
+            array_non_equal.append('\n')
+            aa = False
+        
 
     df_concatenated_copy = df_concatenated[df_concatenated.index.isin(array_df_to_drop)].copy()
-    
+    # print(array_non_equal)
     # remove white spaces in each formulas
     for col in df_concatenated_copy.columns:
         df_concatenated_copy[col] = df_concatenated_copy[col].map(lambda x: x.strip().replace(' ', '') if isinstance(x, str) else x)
@@ -86,4 +94,12 @@ def filter_lines(name_file):
     else:
         print("The non equal formulas are saved in output/not_equal_simplif_all_options.txt, and the are: ", num_not_equal, "/", num_total_formula, " which is %: ", num_not_equal/num_total_formula*100)
 
+    # save on file for every line separated with \n
+    with open('output/not_equal_simplif_all_options.txt', 'w') as f:
+        for item in array_non_equal:
+            if item == '\n':
+                f.write("%s" % "\n")
+            else:   
+                f.write("%s" % item + " ")
+            # f.write("%s\n" % item)
 filter_lines("output/spot_all_options.txt")

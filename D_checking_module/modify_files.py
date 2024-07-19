@@ -21,57 +21,57 @@ import shutil
 
 # given a file, modify the model by removing the probabilities and copying the file to a new file
 
-'''
-def modify_model(file_name):
-    original_file = file_name
+# '''
+# def modify_model(file_name):
+#     original_file = file_name
 
-    file_name = "copy-" + file_name
-    file_name_left = file_name.split('.')[0].split('/')[-1] + "." + file_name.split('.')[-1]
-    file_name_right = '/'.join(file_name.split('.')[0].split('/')[:-1] )
-    file_name_right = file_name_right + '/' + file_name_left
+#     file_name = "copy-" + file_name
+#     file_name_left = file_name.split('.')[0].split('/')[-1] + "." + file_name.split('.')[-1]
+#     file_name_right = '/'.join(file_name.split('.')[0].split('/')[:-1] )
+#     file_name_right = file_name_right + '/' + file_name_left
 
-    file_out = open(file_name_right, "w")
+#     file_out = open(file_name_right, "w")
 
-    # read files in original folder original/brp, then remove the files in the copy folder copy/brp, 
-    # and write to the copy folder copy/copy-brp
-    with open(original_file, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
+#     # read files in original folder original/brp, then remove the files in the copy folder copy/brp, 
+#     # and write to the copy folder copy/copy-brp
+#     with open(original_file, 'r', encoding='utf-8') as file:
+#         lines = file.readlines()
 
-    # if os.path.exists(file_name):
-    #     os.remove(file_name)
+#     # if os.path.exists(file_name):
+#     #     os.remove(file_name)
 
-    modified_lines = []
-    # concatenate lines until the line ends with ;
-    # for idx, line in enumerate(lines):
-    #     if line.find(';') == -1: #if the line does not end with ;
-    #         while lines[idx+1].find(';') == -1:
-    #             line = line + lines[idx+1]
-    #             idx += 1
+#     modified_lines = []
+#     # concatenate lines until the line ends with ;
+#     # for idx, line in enumerate(lines):
+#     #     if line.find(';') == -1: #if the line does not end with ;
+#     #         while lines[idx+1].find(';') == -1:
+#     #             line = line + lines[idx+1]
+#     #             idx += 1
 
-        # if 
+#         # if 
     
-    for line in lines:
-        # remove comments 
-        line = re.sub(r'\s*\/\/.*?$', '', line)
-        #FOUND ARROW and COLON
-        if line.find('->') != -1 and line.find(':') != -1: 
-            line = remove_probability_model(line)
-            # if previous line is not empty and does not end with ;
-        # else if line matches (\s+\+) 
-        # if matches white space and + 
-        elif re.match(r'\s+\+', line) is not None:
-            line = remove_probability_without_arrow(line)
+#     for line in lines:
+#         # remove comments 
+#         line = re.sub(r'\s*\/\/.*?$', '', line)
+#         #FOUND ARROW and COLON
+#         if line.find('->') != -1 and line.find(':') != -1: 
+#             line = remove_probability_model(line)
+#             # if previous line is not empty and does not end with ;
+#         # else if line matches (\s+\+) 
+#         # if matches white space and + 
+#         elif re.match(r'\s+\+', line) is not None:
+#             line = remove_probability_without_arrow(line)
 
-        modified_lines.append(line)
+#         modified_lines.append(line)
 
-        if line != '\n':
-            file_out.write(line)
+#         if line != '\n':
+#             file_out.write(line)
 
-    print("Modified model in file ", file_name_right)
-    # delete original file in copy folder, because now there is only the copy file (modified)
+#     print("Modified model in file ", file_name_right)
+#     # delete original file in copy folder, because now there is only the copy file (modified)
     
-    file_out.close()
-'''
+#     file_out.close()
+# '''
 
 
 
@@ -178,23 +178,37 @@ def modify_auto(file_name):
 
 
 # traverse root directory, and list directories as dirs and files as files
-for root, dirs, files in os.walk("prism-examples"):
+for root, dirs, files in os.walk("../prism-examples"):
     path = root.split(os.sep)
-    destination = "copy-" + root    
-    shutil.copy("run_PRISM/prism", destination)
-    os.chmod(destination, 0o777)
+    # print(root)
+    shutil.copy("prism", root)
+    os.chmod(root, 0o777)
     # print((len(path) - 1) * '---', os.path.basename(root))
-    for file in files:
+    for name_file in files:
         # print(len(path) * '---', file)
         # model doesn't have to be modified, because it works even with probabilities
         # if file.endswith(".pm") or file.endswith(".sm") or file.endswith(".nsm") or file.endswith(".nm") or file.endswith(".prism"):
         #     file_name = os.path.join(root, file)
         #     modify_model(file_name)
-        if file.endswith(".pctl") or file.endswith(".csl") or file.endswith(".props"):
-            file_name = os.path.join(root, file)
-            modify_property(file_name)
-        elif file == "auto":
-            modify_auto(root)
+        # if file.endswith(".pctl") or file.endswith(".csl") or file.endswith(".props"):
+        #     file_name = os.path.join(root, file)
+        #     modify_property(file_name)
+        # elif file == "auto":
+        #     modify_auto(root)
+        if name_file == "auto":
+            # for now, if in the auto file there is a for loop, we skip the file.
+            # try:
+            with open(os.path.join(root , name_file), 'r') as file:
+                # Read the entire file content
+                content = file.read()
+                # Check if the string "for" is in the content
+                if "for" in content:
+                    print("Found 'for' in ", root)
+            # except FileNotFoundError:
+            #     print(f"The file {root} does not exist.")
 
 
+
+
+# ./prism brp.pm -pf "E [ (X(F("s=0")))&(X(F("s=0"))) ]" -const N=16,MAX=2 -fixdl -ltl2datool hoa-ltl2dstar-with-ltl2ba-for-prism -ltl2dasyntax lbt
 

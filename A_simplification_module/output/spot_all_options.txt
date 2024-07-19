@@ -1,0 +1,5319 @@
+   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)
+   a   a
+   F(a)   F(a)
+   a   a
+   a   a
+   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))
+   G(a)   G(a)
+   F(a)   F(a)
+   a   a
+   a   a
+   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)
+   b   b
+   F(b)   F(b)
+   b   b
+   b   b
+   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))
+   G(b)   G(b)
+   F(b)   F(b)
+   b   b
+   b   b
+   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)
+   c   c
+   F(c)   F(c)
+   c   c
+   c   c
+   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))
+   G(c)   G(c)
+   F(c)   F(c)
+   c   c
+   c   c
+   X(X(G(a)))   X(X(G(a)))
+   X(X(G(b)))   X(X(G(b)))
+   X(X(G(c)))   X(X(G(c)))
+   X(X(F(a)))   X(X(F(a)))
+   X(X(F(b)))   X(X(F(b)))
+   X(X(F(c)))   X(X(F(c)))
+   X(X(G(a)))   X(X(G(a)))
+   X(X(G(b)))   X(X(G(b)))
+   X(X(G(c)))   X(X(G(c)))
+   X(X(F(a)))   X(X(F(a)))
+   X(X(F(b)))   X(X(F(b)))
+   X(X(F(c)))   X(X(F(c)))
+   X(X(G(a)))   X(X(G(a)))
+   X(X(G(b)))   X(X(G(b)))
+   X(X(G(c)))   X(X(G(c)))
+   X(X(F(a)))   X(X(F(a)))
+   X(X(F(b)))   X(X(F(b)))
+   X(X(F(c)))   X(X(F(c)))
+   X(X(a))   X(X(a))   X(X(a))
+   X(X(a))   X(X(a))   X(X(a))
+   X(X(a))   X(X(a))   X(X(a))
+   X(X(b))   X(X(b))   X(X(b))
+   X(X(b))   X(X(b))   X(X(b))
+   X(X(b))   X(X(b))   X(X(b))
+   X(X(c))   X(X(c))   X(X(c))
+   X(X(c))   X(X(c))   X(X(c))
+   X(X(c))   X(X(c))   X(X(c))
+   X(G(!(a)))   X(G(!(a)))
+   X(G(!(b)))   X(G(!(b)))
+   X(G(!(c)))   X(G(!(c)))
+   X(F(!(a)))   X(F(!(a)))
+   X(F(!(b)))   X(F(!(b)))
+   X(F(!(c)))   X(F(!(c)))
+   X(F(!(a)))   X(F(!(a)))
+   X(F(!(b)))   X(F(!(b)))
+   X(F(!(c)))   X(F(!(c)))
+   X(G(!(a)))   X(G(!(a)))
+   X(G(!(b)))   X(G(!(b)))
+   X(G(!(c)))   X(G(!(c)))
+   X(F(!(a)))   X(F(!(a)))
+   X(F(!(b)))   X(F(!(b)))
+   X(F(!(c)))   X(F(!(c)))
+   X(G(!(a)))   X(G(!(a)))
+   X(G(!(b)))   X(G(!(b)))
+   X(G(!(c)))   X(G(!(c)))
+   X(!(a))   X(!(a))   X(!(a))
+   X(!(a))   X(!(a))   X(!(a))
+   X(!(a))   X(!(a))   X(!(a))   X(!(a))   X(!(a))
+   X(!(a))   X(!(a))   X(!(a))
+   X(!(a))   X(!(a))   X(!(a))
+   X(!(b))   X(!(b))   X(!(b))
+   X(!(b))   X(!(b))   X(!(b))
+   X(!(b))   X(!(b))   X(!(b))   X(!(b))   X(!(b))
+   X(!(b))   X(!(b))   X(!(b))
+   X(!(b))   X(!(b))   X(!(b))
+   X(!(c))   X(!(c))   X(!(c))
+   X(!(c))   X(!(c))   X(!(c))
+   X(!(c))   X(!(c))   X(!(c))   X(!(c))   X(!(c))
+   X(!(c))   X(!(c))   X(!(c))
+   X(!(c))   X(!(c))   X(!(c))
+   X(G(a))   X(G(a))
+   X(G(b))   X(G(b))
+   X(G(c))   X(G(c))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   X(G(!(a)))   X(G(!(a)))
+   X(G(!(b)))   X(G(!(b)))
+   X(G(!(c)))   X(G(!(c)))
+   X(G(a))   X(G(a))   X(G(a))
+   X(G(b))   X(G(b))   X(G(b))
+   X(G(c))   X(G(c))   X(G(c))
+   G(F(a))   G(F(a))   G(F(a))
+   G(F(b))   G(F(b))   G(F(b))
+   G(F(c))   G(F(c))   G(F(c))
+   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(F(a))   X(F(a))
+   X(F(b))   X(F(b))
+   X(F(c))   X(F(c))
+   X(F(!(a)))   X(F(!(a)))
+   X(F(!(b)))   X(F(!(b)))
+   X(F(!(c)))   X(F(!(c)))
+   F(G(a))   F(G(a))   F(G(a))
+   F(G(b))   F(G(b))   F(G(b))
+   F(G(c))   F(G(c))   F(G(c))
+   X(F(a))   X(F(a))   X(F(a))
+   X(F(b))   X(F(b))   X(F(b))
+   X(F(c))   X(F(c))   X(F(c))
+   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   (a)U(X(b))   (a)U(X(b))   (a)U(X(b))
+   (a)U(X(c))   (a)U(X(c))   (a)U(X(c))
+   (b)U(X(a))   (b)U(X(a))   (b)U(X(a))
+   (b)U(X(c))   (b)U(X(c))   (b)U(X(c))
+   (c)U(X(a))   (c)U(X(a))   (c)U(X(a))
+   (c)U(X(b))   (c)U(X(b))   (c)U(X(b))
+   (X(b))U(a)   (X(b))U(a)   (X(b))U(a)
+   (X(c))U(a)   (X(c))U(a)   (X(c))U(a)
+   (X(a))U(b)   (X(a))U(b)   (X(a))U(b)
+   (X(c))U(b)   (X(c))U(b)   (X(c))U(b)
+   (X(a))U(c)   (X(a))U(c)   (X(a))U(c)
+   (X(b))U(c)   (X(b))U(c)   (X(b))U(c)
+   X((a)U(b))   X((a)U(b))   X((a)U(b))
+   X((a)U(c))   X((a)U(c))   X((a)U(c))
+   X((b)U(a))   X((b)U(a))   X((b)U(a))
+   X((b)U(c))   X((b)U(c))   X((b)U(c))
+   X((c)U(a))   X((c)U(a))   X((c)U(a))
+   X((c)U(b))   X((c)U(b))   X((c)U(b))
+   X(G(!(a)))   X(G(!(a)))
+   X(G(!(b)))   X(G(!(b)))
+   X(G(!(c)))   X(G(!(c)))
+   X(F(!(a)))   X(F(!(a)))
+   X(F(!(b)))   X(F(!(b)))
+   X(F(!(c)))   X(F(!(c)))
+   X(F(!(a)))   X(F(!(a)))
+   X(F(!(b)))   X(F(!(b)))
+   X(F(!(c)))   X(F(!(c)))
+   X(G(!(a)))   X(G(!(a)))
+   X(G(!(b)))   X(G(!(b)))
+   X(G(!(c)))   X(G(!(c)))
+   X(!(a))   X(!(a))   X(!(a))
+   X(!(a))   X(!(a))   X(!(a))
+   X(!(a))   X(!(a))   X(!(a))   X(!(a))   X(!(a))
+   X(!(a))   X(!(a))   X(!(a))
+   X(!(a))   X(!(a))   X(!(a))
+   X(!(b))   X(!(b))   X(!(b))
+   X(!(b))   X(!(b))   X(!(b))
+   X(!(b))   X(!(b))   X(!(b))   X(!(b))   X(!(b))
+   X(!(b))   X(!(b))   X(!(b))
+   X(!(b))   X(!(b))   X(!(b))
+   X(!(c))   X(!(c))   X(!(c))
+   X(!(c))   X(!(c))   X(!(c))
+   X(!(c))   X(!(c))   X(!(c))   X(!(c))   X(!(c))
+   X(!(c))   X(!(c))   X(!(c))
+   X(!(c))   X(!(c))   X(!(c))
+   X(G(a))   X(G(a))
+   X(G(b))   X(G(b))
+   X(G(c))   X(G(c))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(F(a))   X(F(a))
+   X(F(b))   X(F(b))
+   X(F(c))   X(F(c))
+   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X((a)U(b))   X((a)U(b))   X((a)U(b))
+   X((a)U(c))   X((a)U(c))   X((a)U(c))
+   X((b)U(a))   X((b)U(a))   X((b)U(a))
+   X((b)U(c))   X((b)U(c))   X((b)U(c))
+   X((c)U(a))   X((c)U(a))   X((c)U(a))
+   X((c)U(b))   X((c)U(b))   X((c)U(b))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(G(a))   X(G(a))
+   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(G(a))   X(G(a))
+   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(G(a))   X(G(a))
+   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(G(a))   X(G(a))
+   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)
+   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)
+   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)
+   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)
+   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)
+   X((X(a))U(a))   X((X(a))U(a))   X((X(a))U(a))
+   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)   X(a)
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)
+   X((a)U(X(a)))   X((a)U(X(a)))   X((a)U(X(a)))
+   X(F(!(a)))   X(F(!(a)))   X(F(!(a)))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)
+   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)   X(a)
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(F(!(a)))   X(F(!(a)))   X(F(!(a)))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(G(a))   X(G(a))
+   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(G(a))   X(G(a))
+   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)
+   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)
+   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)   X(a)
+   X((X(a))U(a))   X((X(a))U(a))   X((X(a))U(a))
+   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)   X(a)
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)
+   X((a)U(X(a)))   X((a)U(X(a)))   X((a)U(X(a)))
+   X(F(!(a)))   X(F(!(a)))   X(F(!(a)))
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)
+   X(a)   X(a)   X(a)   X(a)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(G(b))   X(G(b))
+   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(G(b))   X(G(b))
+   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(G(b))   X(G(b))
+   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(G(b))   X(G(b))
+   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)
+   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)
+   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)
+   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)
+   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)
+   X((X(b))U(b))   X((X(b))U(b))   X((X(b))U(b))
+   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)   X(b)
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)
+   X((b)U(X(b)))   X((b)U(X(b)))   X((b)U(X(b)))
+   X(F(!(b)))   X(F(!(b)))   X(F(!(b)))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)
+   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)   X(b)
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(F(!(b)))   X(F(!(b)))   X(F(!(b)))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(G(b))   X(G(b))
+   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(G(b))   X(G(b))
+   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)
+   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)
+   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)   X(b)
+   X((X(b))U(b))   X((X(b))U(b))   X((X(b))U(b))
+   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)   X(b)
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)
+   X((b)U(X(b)))   X((b)U(X(b)))   X((b)U(X(b)))
+   X(F(!(b)))   X(F(!(b)))   X(F(!(b)))
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)
+   X(b)   X(b)   X(b)   X(b)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(G(c))   X(G(c))
+   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(G(c))   X(G(c))
+   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(G(c))   X(G(c))
+   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(G(c))   X(G(c))
+   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)
+   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)
+   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)
+   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)
+   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)
+   X((X(c))U(c))   X((X(c))U(c))   X((X(c))U(c))
+   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)   X(c)
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)
+   X((c)U(X(c)))   X((c)U(X(c)))   X((c)U(X(c)))
+   X(F(!(c)))   X(F(!(c)))   X(F(!(c)))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)
+   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)   X(c)
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(F(!(c)))   X(F(!(c)))   X(F(!(c)))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(G(c))   X(G(c))
+   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(G(c))   X(G(c))
+   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)
+   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)
+   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)   X(c)
+   X((X(c))U(c))   X((X(c))U(c))   X((X(c))U(c))
+   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)   X(c)
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)
+   X((c)U(X(c)))   X((c)U(X(c)))   X((c)U(X(c)))
+   X(F(!(c)))   X(F(!(c)))   X(F(!(c)))
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)
+   X(c)   X(c)   X(c)   X(c)
+   G(a)   G(a)
+   G(b)   G(b)
+   G(c)   G(c)
+   F(a)   F(a)
+   F(b)   F(b)
+   F(c)   F(c)
+   F(a)   F(a)
+   F(b)   F(b)
+   F(c)   F(c)
+   G(a)   G(a)
+   G(b)   G(b)
+   G(c)   G(c)
+   G(a)   G(a)
+   G(b)   G(b)
+   G(c)   G(c)
+   F(a)   F(a)
+   F(b)   F(b)
+   F(c)   F(c)
+   a   a   a
+   a   a   a
+   a   a   a
+   b   b   b
+   b   b   b
+   b   b   b
+   c   c   c
+   c   c   c
+   c   c   c
+   G(!(a))   G(!(a))
+   G(!(b))   G(!(b))
+   G(!(c))   G(!(c))
+   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))
+   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))
+   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))
+   G(F(!(a)))   G(F(!(a)))   G(F(!(a)))   G(F(!(a)))
+   G(F(!(b)))   G(F(!(b)))   G(F(!(b)))   G(F(!(b)))
+   G(F(!(c)))   G(F(!(c)))   G(F(!(c)))   G(F(!(c)))
+   G(F(!(a)))   G(F(!(a)))   G(F(!(a)))
+   G(F(!(b)))   G(F(!(b)))   G(F(!(b)))
+   G(F(!(c)))   G(F(!(c)))   G(F(!(c)))
+   G(!(a))   G(!(a))   G(!(a))
+   G(!(b))   G(!(b))   G(!(b))
+   G(!(c))   G(!(c))   G(!(c))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   F(!(a))   F(!(a))
+   F(!(b))   F(!(b))
+   F(!(c))   F(!(c))
+   F(!(a))   F(!(a))   F(!(a))
+   F(!(b))   F(!(b))   F(!(b))
+   F(!(c))   F(!(c))   F(!(c))
+   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))
+   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))
+   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   (a)U(!(b))   (a)U(!(b))   (a)U(!(b))
+   (a)U(!(c))   (a)U(!(c))   (a)U(!(c))
+   (b)U(!(a))   (b)U(!(a))   (b)U(!(a))
+   (b)U(!(c))   (b)U(!(c))   (b)U(!(c))
+   (c)U(!(a))   (c)U(!(a))   (c)U(!(a))
+   (c)U(!(b))   (c)U(!(b))   (c)U(!(b))
+   (!(b))U(a)   (!(b))U(a)   (!(b))U(a)
+   (!(c))U(a)   (!(c))U(a)   (!(c))U(a)
+   (!(a))U(b)   (!(a))U(b)   (!(a))U(b)
+   (!(c))U(b)   (!(c))U(b)   (!(c))U(b)
+   (!(a))U(c)   (!(a))U(c)   (!(a))U(c)
+   (!(b))U(c)   (!(b))U(c)   (!(b))U(c)
+   (!(a))U(!(b))   (!(a))U(!(b))   (!(a))U(!(b))
+   (!(a))U(!(c))   (!(a))U(!(c))   (!(a))U(!(c))
+   (!(b))U(!(a))   (!(b))U(!(a))   (!(b))U(!(a))
+   (!(b))U(!(c))   (!(b))U(!(c))   (!(b))U(!(c))
+   (!(c))U(!(a))   (!(c))U(!(a))   (!(c))U(!(a))
+   (!(c))U(!(b))   (!(c))U(!(b))   (!(c))U(!(b))
+   F(!(a))   F(!(a))
+   F(!(b))   F(!(b))
+   F(!(c))   F(!(c))
+   G(F(!(a)))   G(F(!(a)))   G(F(!(a)))   G(F(!(a)))
+   G(F(!(b)))   G(F(!(b)))   G(F(!(b)))   G(F(!(b)))
+   G(F(!(c)))   G(F(!(c)))   G(F(!(c)))   G(F(!(c)))
+   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))
+   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))
+   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(!(a))   G(!(a))
+   G(!(b))   G(!(b))
+   G(!(c))   G(!(c))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   (!(b))U(((!(a))&(!(b)))|(G(!(b))))   (!(b))U(((!(a))&(!(b)))|(G(!(b))))   (!(b))U(((!(a))&(!(b)))|(G(!(b))))
+   (!(c))U(((!(a))&(!(c)))|(G(!(c))))   (!(c))U(((!(a))&(!(c)))|(G(!(c))))   (!(c))U(((!(a))&(!(c)))|(G(!(c))))
+   (!(a))U(((!(a))&(!(b)))|(G(!(a))))   (!(a))U(((!(a))&(!(b)))|(G(!(a))))   (!(a))U(((!(a))&(!(b)))|(G(!(a))))
+   (!(c))U(((!(b))&(!(c)))|(G(!(c))))   (!(c))U(((!(b))&(!(c)))|(G(!(c))))   (!(c))U(((!(b))&(!(c)))|(G(!(c))))
+   (!(a))U(((!(a))&(!(c)))|(G(!(a))))   (!(a))U(((!(a))&(!(c)))|(G(!(a))))   (!(a))U(((!(a))&(!(c)))|(G(!(a))))
+   (!(b))U(((!(b))&(!(c)))|(G(!(b))))   (!(b))U(((!(b))&(!(c)))|(G(!(b))))   (!(b))U(((!(b))&(!(c)))|(G(!(b))))
+   !(a)   !(a)   !(a)
+   G(!(a))   G(!(a))
+   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   G(!(a))   G(!(a))
+   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)
+   G(!(a))   G(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)
+   G(!(a))   G(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)
+   F(!(a))   F(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)
+   F(!(a))   F(!(a))
+   !(a)   !(a)   !(a)
+   F(!(a))   F(!(a))
+   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   F(!(a))   F(!(a))
+   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)   !(a)   !(a)
+   (X(!(a)))U(!(a))   (X(!(a)))U(!(a))   (X(!(a)))U(!(a))
+   F(!(a))   F(!(a))   F(!(a))
+   !(a)   !(a)   !(a)   !(a)
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)
+   (!(a))U(X(!(a)))   (!(a))U(X(!(a)))   (!(a))U(X(!(a)))
+   F(a)   F(a)   F(a)
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)
+   (X(!(a)))U(!(a))   (X(!(a)))U(!(a))   (X(!(a)))U(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)
+   (!(a))U(X(!(a)))   (!(a))U(X(!(a)))   (!(a))U(X(!(a)))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   F(!(a))   F(!(a))
+   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   F(!(a))   F(!(a))
+   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)
+   G(!(a))   G(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)
+   G(!(a))   G(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)   !(a)   !(a)   !(a)
+   (!(a))U(((!(a))&(X(!(a))))|(G(!(a))))   (!(a))U(((!(a))&(X(!(a))))|(G(!(a))))   (!(a))U(((!(a))&(X(!(a))))|(G(!(a))))
+   G(!(a))   G(!(a))   G(!(a))
+   !(a)   !(a)   !(a)   !(a)
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)
+   (X(!(a)))U(((!(a))&(X(!(a))))|(G(X(!(a)))))   (X(!(a)))U(((!(a))&(X(!(a))))|(G(X(!(a)))))   (X(!(a)))U(((!(a))&(X(!(a))))|(G(X(!(a)))))
+   G(a)   G(a)   G(a)
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)
+   !(a)   !(a)   !(a)   !(a)
+   !(b)   !(b)   !(b)
+   G(!(b))   G(!(b))
+   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   G(!(b))   G(!(b))
+   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)
+   G(!(b))   G(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)
+   G(!(b))   G(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)
+   F(!(b))   F(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)
+   F(!(b))   F(!(b))
+   !(b)   !(b)   !(b)
+   F(!(b))   F(!(b))
+   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   F(!(b))   F(!(b))
+   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)   !(b)   !(b)
+   (X(!(b)))U(!(b))   (X(!(b)))U(!(b))   (X(!(b)))U(!(b))
+   F(!(b))   F(!(b))   F(!(b))
+   !(b)   !(b)   !(b)   !(b)
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)
+   (!(b))U(X(!(b)))   (!(b))U(X(!(b)))   (!(b))U(X(!(b)))
+   F(b)   F(b)   F(b)
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)
+   (X(!(b)))U(!(b))   (X(!(b)))U(!(b))   (X(!(b)))U(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)
+   (!(b))U(X(!(b)))   (!(b))U(X(!(b)))   (!(b))U(X(!(b)))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   F(!(b))   F(!(b))
+   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   F(!(b))   F(!(b))
+   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)
+   G(!(b))   G(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)
+   G(!(b))   G(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)   !(b)   !(b)   !(b)
+   (!(b))U(((!(b))&(X(!(b))))|(G(!(b))))   (!(b))U(((!(b))&(X(!(b))))|(G(!(b))))   (!(b))U(((!(b))&(X(!(b))))|(G(!(b))))
+   G(!(b))   G(!(b))   G(!(b))
+   !(b)   !(b)   !(b)   !(b)
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)
+   (X(!(b)))U(((!(b))&(X(!(b))))|(G(X(!(b)))))   (X(!(b)))U(((!(b))&(X(!(b))))|(G(X(!(b)))))   (X(!(b)))U(((!(b))&(X(!(b))))|(G(X(!(b)))))
+   G(b)   G(b)   G(b)
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)
+   !(b)   !(b)   !(b)   !(b)
+   !(c)   !(c)   !(c)
+   G(!(c))   G(!(c))
+   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   G(!(c))   G(!(c))
+   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)
+   G(!(c))   G(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)
+   G(!(c))   G(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)
+   F(!(c))   F(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)
+   F(!(c))   F(!(c))
+   !(c)   !(c)   !(c)
+   F(!(c))   F(!(c))
+   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   F(!(c))   F(!(c))
+   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)   !(c)   !(c)
+   (X(!(c)))U(!(c))   (X(!(c)))U(!(c))   (X(!(c)))U(!(c))
+   F(!(c))   F(!(c))   F(!(c))
+   !(c)   !(c)   !(c)   !(c)
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)
+   (!(c))U(X(!(c)))   (!(c))U(X(!(c)))   (!(c))U(X(!(c)))
+   F(c)   F(c)   F(c)
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)
+   (X(!(c)))U(!(c))   (X(!(c)))U(!(c))   (X(!(c)))U(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)
+   (!(c))U(X(!(c)))   (!(c))U(X(!(c)))   (!(c))U(X(!(c)))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   F(!(c))   F(!(c))
+   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   F(!(c))   F(!(c))
+   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)
+   G(!(c))   G(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)
+   G(!(c))   G(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)   !(c)   !(c)   !(c)
+   (!(c))U(((!(c))&(X(!(c))))|(G(!(c))))   (!(c))U(((!(c))&(X(!(c))))|(G(!(c))))   (!(c))U(((!(c))&(X(!(c))))|(G(!(c))))
+   G(!(c))   G(!(c))   G(!(c))
+   !(c)   !(c)   !(c)   !(c)
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)
+   (X(!(c)))U(((!(c))&(X(!(c))))|(G(X(!(c)))))   (X(!(c)))U(((!(c))&(X(!(c))))|(G(X(!(c)))))   (X(!(c)))U(((!(c))&(X(!(c))))|(G(X(!(c)))))
+   G(c)   G(c)   G(c)
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)
+   !(c)   !(c)   !(c)   !(c)
+   G(a)   G(a)
+   G(b)   G(b)
+   G(c)   G(c)
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   (a)&(G(b))   (a)&(G(b))
+   (a)&(G(c))   (a)&(G(c))
+   (b)&(G(a))   (b)&(G(a))
+   (b)&(G(c))   (b)&(G(c))
+   (c)&(G(a))   (c)&(G(a))
+   (c)&(G(b))   (c)&(G(b))
+   (a)&(G(b))   (a)&(G(b))
+   (a)&(G(c))   (a)&(G(c))
+   (b)&(G(a))   (b)&(G(a))
+   (b)&(G(c))   (b)&(G(c))
+   (c)&(G(a))   (c)&(G(a))
+   (c)&(G(b))   (c)&(G(b))
+   G((a)&(b))   G((a)&(b))   G((a)&(b))
+   G((a)&(c))   G((a)&(c))   G((a)&(c))
+   G((a)&(b))   G((a)&(b))   G((a)&(b))
+   G((b)&(c))   G((b)&(c))   G((b)&(c))
+   G((a)&(c))   G((a)&(c))   G((a)&(c))
+   G((b)&(c))   G((b)&(c))   G((b)&(c))
+   (a)|(G(b))   (a)|(G(b))
+   (a)|(G(c))   (a)|(G(c))
+   (b)|(G(a))   (b)|(G(a))
+   (b)|(G(c))   (b)|(G(c))
+   (c)|(G(a))   (c)|(G(a))
+   (c)|(G(b))   (c)|(G(b))
+   (a)|(G(b))   (a)|(G(b))
+   (a)|(G(c))   (a)|(G(c))
+   (b)|(G(a))   (b)|(G(a))
+   (b)|(G(c))   (b)|(G(c))
+   (c)|(G(a))   (c)|(G(a))
+   (c)|(G(b))   (c)|(G(b))
+   (G(a))|(G(b))   (G(a))|(G(b))   (G(a))|(G(b))
+   (G(a))|(G(c))   (G(a))|(G(c))   (G(a))|(G(c))
+   (G(b))|(G(a))   (G(b))|(G(a))   (G(b))|(G(a))
+   (G(b))|(G(c))   (G(b))|(G(c))   (G(b))|(G(c))
+   (G(c))|(G(a))   (G(c))|(G(a))   (G(c))|(G(a))
+   (G(c))|(G(b))   (G(c))|(G(b))   (G(c))|(G(b))
+   (a)U(G(b))   (a)U(G(b))   (a)U(G(b))   (a)U(G(b))
+   (a)U(G(c))   (a)U(G(c))   (a)U(G(c))   (a)U(G(c))
+   (b)U(G(a))   (b)U(G(a))   (b)U(G(a))   (b)U(G(a))
+   (b)U(G(c))   (b)U(G(c))   (b)U(G(c))   (b)U(G(c))
+   (c)U(G(a))   (c)U(G(a))   (c)U(G(a))   (c)U(G(a))
+   (c)U(G(b))   (c)U(G(b))   (c)U(G(b))   (c)U(G(b))
+   (G(b))U(a)   (G(b))U(a)   (G(b))U(a)   (G(b))U(a)
+   (G(c))U(a)   (G(c))U(a)   (G(c))U(a)   (G(c))U(a)
+   (G(a))U(b)   (G(a))U(b)   (G(a))U(b)   (G(a))U(b)
+   (G(c))U(b)   (G(c))U(b)   (G(c))U(b)   (G(c))U(b)
+   (G(a))U(c)   (G(a))U(c)   (G(a))U(c)   (G(a))U(c)
+   (G(b))U(c)   (G(b))U(c)   (G(b))U(c)   (G(b))U(c)
+   (G(a))U(G(b))   (G(a))U(G(b))   (G(a))U(G(b))   (G(a))U(G(b))   (G(a))U(G(b))
+   (G(a))U(G(c))   (G(a))U(G(c))   (G(a))U(G(c))   (G(a))U(G(c))   (G(a))U(G(c))
+   (G(b))U(G(a))   (G(b))U(G(a))   (G(b))U(G(a))   (G(b))U(G(a))   (G(b))U(G(a))
+   (G(b))U(G(c))   (G(b))U(G(c))   (G(b))U(G(c))   (G(b))U(G(c))   (G(b))U(G(c))
+   (G(c))U(G(a))   (G(c))U(G(a))   (G(c))U(G(a))   (G(c))U(G(a))   (G(c))U(G(a))
+   (G(c))U(G(b))   (G(c))U(G(b))   (G(c))U(G(b))   (G(c))U(G(b))   (G(c))U(G(b))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G((a)&(b))   G((a)&(b))
+   G((a)&(c))   G((a)&(c))
+   G((a)&(b))   G((a)&(b))
+   G((b)&(c))   G((b)&(c))
+   G((a)&(c))   G((a)&(c))
+   G((b)&(c))   G((b)&(c))
+   G((a)|(b))   G((a)|(b))
+   G((a)|(c))   G((a)|(c))
+   G((a)|(b))   G((a)|(b))
+   G((b)|(c))   G((b)|(c))
+   G((a)|(c))   G((a)|(c))
+   G((b)|(c))   G((b)|(c))
+   G((a)U(b))   G((a)U(b))   G((a)U(b))   G((a)U(b))
+   G((a)U(c))   G((a)U(c))   G((a)U(c))   G((a)U(c))
+   G((b)U(a))   G((b)U(a))   G((b)U(a))   G((b)U(a))
+   G((b)U(c))   G((b)U(c))   G((b)U(c))   G((b)U(c))
+   G((c)U(a))   G((c)U(a))   G((c)U(a))   G((c)U(a))
+   G((c)U(b))   G((c)U(b))   G((c)U(b))   G((c)U(b))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   0   0   0   0
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   0   0   0   0
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   0   0   0   0
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   0   0   0   0
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   X(G(a))   X(G(a))   X(G(a))
+   1   1   1   1
+   G(a)   G(a)
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   X(G(a))   X(G(a))   X(G(a))
+   1   1   1   1
+   G(a)   G(a)
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   X(G(a))   X(G(a))   X(G(a))
+   (G(!(a)))|(G(a))   (G(a))|(G(!(a)))   (G(!(a)))|(G(a))   (G(!(a)))|(G(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   X(G(a))   X(G(a))   X(G(a))
+   (G(a))|(G(!(a)))   (G(a))|(G(!(a)))   (G(a))|(G(!(a)))   (G(a))|(G(!(a)))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   (X(G(a)))U(G(a))   X(G(a))   (X(G(a)))U(G(a))   (X(G(a)))U(G(a))   (X(G(a)))U(G(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   G(a)   G(a)   G(a)   G(a)
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   (X(G(a)))U(G(a))   X(G(a))   (X(G(a)))U(G(a))   (X(G(a)))U(G(a))   (X(G(a)))U(G(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   X(G(a))   X(G(a))   X(G(a))   X(G(a))   X(G(a))
+   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))   G(!(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G((a)&(X(a)))   G((a)&(X(a)))
+   0   0
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G((a)&(X(a)))   G((a)&(X(a)))
+   0   0
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G((a)|(X(a)))   G((a)|(X(a)))
+   1   1
+   G(a)   G(a)   G(a)
+   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G((a)|(X(a)))   G((a)|(X(a)))
+   1   1
+   G(a)   G(a)   G(a)
+   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G((X(a))U(a))   G((X(a))U(a))   G((X(a))U(a))   G((X(a))U(a))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G((a)U(X(a)))   G((a)U(X(a)))   G((a)U(X(a)))   G((a)U(X(a)))
+   G(F(!(a)))   G(F(!(a)))   G(F(!(a)))   G(F(!(a)))
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   0   0   0   0
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   0   0   0   0
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   0   0   0   0
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   0   0   0   0
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   X(G(b))   X(G(b))   X(G(b))
+   1   1   1   1
+   G(b)   G(b)
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   X(G(b))   X(G(b))   X(G(b))
+   1   1   1   1
+   G(b)   G(b)
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   X(G(b))   X(G(b))   X(G(b))
+   (G(!(b)))|(G(b))   (G(b))|(G(!(b)))   (G(!(b)))|(G(b))   (G(!(b)))|(G(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   X(G(b))   X(G(b))   X(G(b))
+   (G(b))|(G(!(b)))   (G(b))|(G(!(b)))   (G(b))|(G(!(b)))   (G(b))|(G(!(b)))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   (X(G(b)))U(G(b))   X(G(b))   (X(G(b)))U(G(b))   (X(G(b)))U(G(b))   (X(G(b)))U(G(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   G(b)   G(b)   G(b)   G(b)
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   (X(G(b)))U(G(b))   X(G(b))   (X(G(b)))U(G(b))   (X(G(b)))U(G(b))   (X(G(b)))U(G(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   X(G(b))   X(G(b))   X(G(b))   X(G(b))   X(G(b))
+   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))   G(!(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G((b)&(X(b)))   G((b)&(X(b)))
+   0   0
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G((b)&(X(b)))   G((b)&(X(b)))
+   0   0
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G((b)|(X(b)))   G((b)|(X(b)))
+   1   1
+   G(b)   G(b)   G(b)
+   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G((b)|(X(b)))   G((b)|(X(b)))
+   1   1
+   G(b)   G(b)   G(b)
+   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G((X(b))U(b))   G((X(b))U(b))   G((X(b))U(b))   G((X(b))U(b))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G((b)U(X(b)))   G((b)U(X(b)))   G((b)U(X(b)))   G((b)U(X(b)))
+   G(F(!(b)))   G(F(!(b)))   G(F(!(b)))   G(F(!(b)))
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   0   0   0   0
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   0   0   0   0
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   0   0   0   0
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   0   0   0   0
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   X(G(c))   X(G(c))   X(G(c))
+   1   1   1   1
+   G(c)   G(c)
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   X(G(c))   X(G(c))   X(G(c))
+   1   1   1   1
+   G(c)   G(c)
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   X(G(c))   X(G(c))   X(G(c))
+   (G(!(c)))|(G(c))   (G(c))|(G(!(c)))   (G(!(c)))|(G(c))   (G(!(c)))|(G(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   X(G(c))   X(G(c))   X(G(c))
+   (G(c))|(G(!(c)))   (G(c))|(G(!(c)))   (G(c))|(G(!(c)))   (G(c))|(G(!(c)))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   (X(G(c)))U(G(c))   X(G(c))   (X(G(c)))U(G(c))   (X(G(c)))U(G(c))   (X(G(c)))U(G(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(c)   G(c)   G(c)   G(c)
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   (X(G(c)))U(G(c))   X(G(c))   (X(G(c)))U(G(c))   (X(G(c)))U(G(c))   (X(G(c)))U(G(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   X(G(c))   X(G(c))   X(G(c))   X(G(c))   X(G(c))
+   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))   G(!(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G((c)&(X(c)))   G((c)&(X(c)))
+   0   0
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G((c)&(X(c)))   G((c)&(X(c)))
+   0   0
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G((c)|(X(c)))   G((c)|(X(c)))
+   1   1
+   G(c)   G(c)   G(c)
+   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G((c)|(X(c)))   G((c)|(X(c)))
+   1   1
+   G(c)   G(c)   G(c)
+   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G((X(c))U(c))   G((X(c))U(c))   G((X(c))U(c))   G((X(c))U(c))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G((c)U(X(c)))   G((c)U(X(c)))   G((c)U(X(c)))   G((c)U(X(c)))
+   G(F(!(c)))   G(F(!(c)))   G(F(!(c)))   G(F(!(c)))
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   F(a)   F(a)
+   F(b)   F(b)
+   F(c)   F(c)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   (a)&(F(b))   (a)&(F(b))
+   (a)&(F(c))   (a)&(F(c))
+   (b)&(F(a))   (b)&(F(a))
+   (b)&(F(c))   (b)&(F(c))
+   (c)&(F(a))   (c)&(F(a))
+   (c)&(F(b))   (c)&(F(b))
+   (a)&(F(b))   (a)&(F(b))
+   (a)&(F(c))   (a)&(F(c))
+   (b)&(F(a))   (b)&(F(a))
+   (b)&(F(c))   (b)&(F(c))
+   (c)&(F(a))   (c)&(F(a))
+   (c)&(F(b))   (c)&(F(b))
+   (F(a))&(F(b))   (F(a))&(F(b))   (F(a))&(F(b))
+   (F(a))&(F(c))   (F(a))&(F(c))   (F(a))&(F(c))
+   (F(b))&(F(a))   (F(b))&(F(a))   (F(b))&(F(a))
+   (F(b))&(F(c))   (F(b))&(F(c))   (F(b))&(F(c))
+   (F(c))&(F(a))   (F(c))&(F(a))   (F(c))&(F(a))
+   (F(c))&(F(b))   (F(c))&(F(b))   (F(c))&(F(b))
+   (a)|(F(b))   (a)|(F(b))
+   (a)|(F(c))   (a)|(F(c))
+   (b)|(F(a))   (b)|(F(a))
+   (b)|(F(c))   (b)|(F(c))
+   (c)|(F(a))   (c)|(F(a))
+   (c)|(F(b))   (c)|(F(b))
+   (a)|(F(b))   (a)|(F(b))
+   (a)|(F(c))   (a)|(F(c))
+   (b)|(F(a))   (b)|(F(a))
+   (b)|(F(c))   (b)|(F(c))
+   (c)|(F(a))   (c)|(F(a))
+   (c)|(F(b))   (c)|(F(b))
+   F((a)|(b))   F((a)|(b))   F((a)|(b))
+   F((a)|(c))   F((a)|(c))   F((a)|(c))
+   F((a)|(b))   F((a)|(b))   F((a)|(b))
+   F((b)|(c))   F((b)|(c))   F((b)|(c))
+   F((a)|(c))   F((a)|(c))   F((a)|(c))
+   F((b)|(c))   F((b)|(c))   F((b)|(c))
+   F(b)   F(b)   F(b)   F(b)
+   F(c)   F(c)   F(c)   F(c)
+   F(a)   F(a)   F(a)   F(a)
+   F(c)   F(c)   F(c)   F(c)
+   F(a)   F(a)   F(a)   F(a)
+   F(b)   F(b)   F(b)   F(b)
+   (F(b))U(a)   (F(b))U(a)   (F(b))U(a)   (F(b))U(a)
+   (F(c))U(a)   (F(c))U(a)   (F(c))U(a)   (F(c))U(a)
+   (F(a))U(b)   (F(a))U(b)   (F(a))U(b)   (F(a))U(b)
+   (F(c))U(b)   (F(c))U(b)   (F(c))U(b)   (F(c))U(b)
+   (F(a))U(c)   (F(a))U(c)   (F(a))U(c)   (F(a))U(c)
+   (F(b))U(c)   (F(b))U(c)   (F(b))U(c)   (F(b))U(c)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F((a)&(b))   F((a)&(b))
+   F((a)&(c))   F((a)&(c))
+   F((a)&(b))   F((a)&(b))
+   F((b)&(c))   F((b)&(c))
+   F((a)&(c))   F((a)&(c))
+   F((b)&(c))   F((b)&(c))
+   F((a)|(b))   F((a)|(b))
+   F((a)|(c))   F((a)|(c))
+   F((a)|(b))   F((a)|(b))
+   F((b)|(c))   F((b)|(c))
+   F((a)|(c))   F((a)|(c))
+   F((b)|(c))   F((b)|(c))
+   F(b)   F(b)   F(b)   F(b)
+   F(c)   F(c)   F(c)   F(c)
+   F(a)   F(a)   F(a)   F(a)
+   F(c)   F(c)   F(c)   F(c)
+   F(a)   F(a)   F(a)   F(a)
+   F(b)   F(b)   F(b)   F(b)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   X(F(a))   X(F(a))   X(F(a))
+   0   0   0   0
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   X(F(a))   X(F(a))   X(F(a))
+   0   0   0   0
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   X(F(a))   X(F(a))   X(F(a))
+   (F(!(a)))&(F(a))   (F(a))&(F(!(a)))   (F(!(a)))&(F(a))   (F(!(a)))&(F(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   X(F(a))   X(F(a))   X(F(a))
+   (F(a))&(F(!(a)))   (F(a))&(F(!(a)))   (F(a))&(F(!(a)))   (F(a))&(F(!(a)))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   1   1   1   1
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   1   1   1   1
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   1   1   1   1
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   1   1   1   1
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))   F(G(!(a)))
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F((a)&(X(a)))   F((a)&(X(a)))
+   0   0
+   F(G(a))   F(G(a))   F(G(a))
+   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F((a)&(X(a)))   F((a)&(X(a)))
+   0   0
+   F(G(a))   F(G(a))   F(G(a))
+   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F((a)|(X(a)))   F((a)|(X(a)))
+   1   1
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F((a)|(X(a)))   F((a)|(X(a)))
+   1   1
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   X(F(b))   X(F(b))   X(F(b))
+   0   0   0   0
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   X(F(b))   X(F(b))   X(F(b))
+   0   0   0   0
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   X(F(b))   X(F(b))   X(F(b))
+   (F(!(b)))&(F(b))   (F(b))&(F(!(b)))   (F(!(b)))&(F(b))   (F(!(b)))&(F(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   X(F(b))   X(F(b))   X(F(b))
+   (F(b))&(F(!(b)))   (F(b))&(F(!(b)))   (F(b))&(F(!(b)))   (F(b))&(F(!(b)))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   1   1   1   1
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   1   1   1   1
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   1   1   1   1
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   1   1   1   1
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))   F(G(!(b)))
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F((b)&(X(b)))   F((b)&(X(b)))
+   0   0
+   F(G(b))   F(G(b))   F(G(b))
+   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F((b)&(X(b)))   F((b)&(X(b)))
+   0   0
+   F(G(b))   F(G(b))   F(G(b))
+   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F((b)|(X(b)))   F((b)|(X(b)))
+   1   1
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F((b)|(X(b)))   F((b)|(X(b)))
+   1   1
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   X(F(c))   X(F(c))   X(F(c))
+   0   0   0   0
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   X(F(c))   X(F(c))   X(F(c))
+   0   0   0   0
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   X(F(c))   X(F(c))   X(F(c))
+   (F(!(c)))&(F(c))   (F(c))&(F(!(c)))   (F(!(c)))&(F(c))   (F(!(c)))&(F(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   X(F(c))   X(F(c))   X(F(c))
+   (F(c))&(F(!(c)))   (F(c))&(F(!(c)))   (F(c))&(F(!(c)))   (F(c))&(F(!(c)))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   1   1   1   1
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   1   1   1   1
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   1   1   1   1
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   1   1   1   1
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))   F(G(!(c)))
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F((c)&(X(c)))   F((c)&(X(c)))
+   0   0
+   F(G(c))   F(G(c))   F(G(c))
+   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F((c)&(X(c)))   F((c)&(X(c)))
+   0   0
+   F(G(c))   F(G(c))   F(G(c))
+   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F((c)|(X(c)))   F((c)|(X(c)))
+   1   1
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F((c)|(X(c)))   F((c)|(X(c)))
+   1   1
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   (a)&(b)   (a)&(b)   (a)&(b)
+   (a)&(c)   (a)&(c)   (a)&(c)
+   (a)&(b)   (a)&(b)   (a)&(b)
+   (a)&(b)   (a)&(b)   (a)&(b)
+   (a)&(c)   (a)&(c)   (a)&(c)
+   (a)&(c)   (a)&(c)   (a)&(c)
+   (a)&(b)   (a)&(b)   (a)&(b)
+   (b)&(c)   (b)&(c)   (b)&(c)
+   (a)&(b)   (a)&(b)   (a)&(b)
+   (a)&(b)   (a)&(b)   (a)&(b)
+   (b)&(c)   (b)&(c)   (b)&(c)
+   (b)&(c)   (b)&(c)   (b)&(c)
+   (a)&(c)   (a)&(c)   (a)&(c)
+   (b)&(c)   (b)&(c)   (b)&(c)
+   (a)&(c)   (a)&(c)   (a)&(c)
+   (a)&(c)   (a)&(c)   (a)&(c)
+   (b)&(c)   (b)&(c)   (b)&(c)
+   (b)&(c)   (b)&(c)   (b)&(c)
+   (a)|(b)   (a)|(b)   (a)|(b)
+   (a)|(c)   (a)|(c)   (a)|(c)
+   (a)|(b)   ((b)U(a))|((a)U(b))   (a)|(b)   (a)|(b)
+   (a)|(b)   (a)|(b)   (a)|(b)
+   (a)|(c)   ((c)U(a))|((a)U(c))   (a)|(c)   (a)|(c)
+   (a)|(c)   (a)|(c)   (a)|(c)
+   (a)|(b)   (a)|(b)   (a)|(b)
+   (b)|(c)   (b)|(c)   (b)|(c)
+   (a)|(b)   ((a)U(b))|((b)U(a))   (a)|(b)   (a)|(b)
+   (a)|(b)   (a)|(b)   (a)|(b)
+   (b)|(c)   ((c)U(b))|((b)U(c))   (b)|(c)   (b)|(c)
+   (b)|(c)   (b)|(c)   (b)|(c)
+   (a)|(c)   (a)|(c)   (a)|(c)
+   (b)|(c)   (b)|(c)   (b)|(c)
+   (a)|(c)   ((a)U(c))|((c)U(a))   (a)|(c)   (a)|(c)
+   (a)|(c)   (a)|(c)   (a)|(c)
+   (b)|(c)   ((b)U(c))|((c)U(b))   (b)|(c)   (b)|(c)
+   (b)|(c)   (b)|(c)   (b)|(c)
+   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(c)   (a)U(c)   (a)U(c)
+   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(c)   (a)U(c)   (a)U(c)
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (a)U(c)   (a)U(c)   (a)U(c)
+   (a)U(c)   (a)U(c)   (a)U(c)
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(c)   (b)U(c)   (b)U(c)
+   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(c)   (b)U(c)   (b)U(c)
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(b)   (c)U(b)   (c)U(b)
+   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(b)   (c)U(b)   (c)U(b)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   a   a   a
+   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)   G(a)
+   a   a
+   a   a   a
+   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)   G(a)
+   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   a   a   a   a
+   (a)|(X(a))   (a)|(X(a))
+   a   a   a
+   F(a)   F(a)
+   a   a   a
+   (a)|(X(a))   (a)|(X(a))
+   a   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a   a
+   a   a   a
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)U((a)&(b))   (a)U((a)&(b))   ((a)U((a)&(b)))U((a)&(b))
+   (a)U((a)&(c))   (a)U((a)&(c))   ((a)U((a)&(c)))U((a)&(c))
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)U((a)&(b))   (a)U((a)&(b))   ((a)U((a)&(b)))U((a)&(b))
+   (a)U((a)&(c))   (a)U((a)&(c))   ((a)U((a)&(c)))U((a)&(c))
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)
+   (a)&(X(F(a)))   (a)&(X(F(a)))
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)
+   X(a)   X(a)
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)
+   (a)&(X(F(a)))   (a)&(X(F(a)))
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0
+   0   0
+   (a)&(F(!(a)))   (a)&(F(!(a)))
+   0   0   0
+   0   0
+   (!(a))&(F(a))   (!(a))&(F(a))
+   0   0   0
+   (a)&(F(!(a)))   (a)&(F(!(a)))
+   0   0
+   0   0   0
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   (a)&(F(G(a)))   (a)&(F(G(a)))   (a)&(F(G(a)))   (a)&(F(G(a)))
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   0   0
+   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   (a)&(G(F(a)))   (a)&(G(F(a)))   (a)&(G(F(a)))   (a)&(G(F(a)))
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   X(a)   X(a)
+   (!(a))&(F(a))   (!(a))&(F(a))
+   G(a)   G(a)   G(a)
+   a   a
+   a   a
+   a   a   a   a
+   a   a
+   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))
+   (a)&(F(!(a)))   (a)&(F(!(a)))   (a)&(F(!(a)))
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   (a)&((a)U(b))   (a)&((a)U(b))   (a)&((a)U(b))
+   (a)&((a)U(c))   (a)&((a)U(c))   (a)&((a)U(c))
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)
+   (a)&(X(F(a)))   (a)&(X(F(a)))
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)
+   (a)&(X(F(a)))   (a)&(X(F(a)))
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0
+   0   0
+   (a)&(F(!(a)))   (a)&(F(!(a)))
+   0   0   0
+   (a)&(F(!(a)))   (a)&(F(!(a)))
+   0   0
+   0   0   0
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)
+   (a)&(F(G(a)))   (a)&(F(G(a)))   (a)&(F(G(a)))   (a)&(F(G(a)))
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   (a)&(G(F(a)))   (a)&(G(F(a)))   (a)&(G(F(a)))   (a)&(G(F(a)))
+   G(a)   G(a)
+   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a
+   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   G(a)   G(a)
+   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))
+   (a)&(F(!(a)))   (a)&(F(!(a)))   (a)&(F(!(a)))
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   (a)&((a)U(b))   (a)&((a)U(b))   (a)&((a)U(b))
+   (a)&((a)U(c))   (a)&((a)U(c))   (a)&((a)U(c))
+   a   a   a
+   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)
+   a   a   a
+   a   a   a   a
+   (a)&(X(a))   (a)&(X(a))
+   G(a)   G(a)
+   a   a   a
+   a   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a   a   a
+   (a)|(X(a))   (a)|(X(a))
+   a   a
+   F(a)   F(a)   F(a)
+   a   a   a   a
+   (a)|(X(a))   (a)|(X(a))
+   a   a
+   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a   a
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (a)|(X(a))   (a)|((a)U(X(a)))   (a)|(X(a))   (a)|(X(a))
+   1   1   1   1
+   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a   a
+   (a)|(b)   (a)|((a)U(b))   (a)|(b)   (a)|(b)
+   (a)|(c)   (a)|((a)U(c))   (a)|(c)   (a)|(c)
+   (a)|(X(a))   (a)|((a)U(X(a)))   (a)|(X(a))   (a)|(X(a))
+   1   1   1   1
+   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a   a
+   (a)|(b)   (a)|((a)U(b))   (a)|(b)   (a)|(b)
+   (a)|(c)   (a)|((a)U(c))   (a)|(c)   (a)|(c)
+   (a)|(X(a))   (X(a))U(a)   (a)|(X(a))   (a)|(X(a))
+   (a)|(X(G(a)))   (a)|(X(G(a)))
+   F(a)   F(a)
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   X(a)   X(a)
+   F(a)   F(a)
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   (a)|(X(G(a)))   (a)|(X(G(a)))
+   F(a)   F(a)
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   1   1   1   1
+   (a)|(G(!(a)))   (a)|(G(!(a)))
+   1   1
+   1   1   1
+   (!(a))|(G(a))   (!(a))|(G(a))
+   1   1
+   1   1   1
+   1   1
+   (a)|(G(!(a)))   (a)|(G(!(a)))
+   1   1   1
+   a   a   a
+   a   a   a
+   a   a   a   a   a   a
+   a   a
+   (a)|(F(G(a)))   (a)|(F(G(a)))   (a)|(F(G(a)))   (a)|(F(G(a)))
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   X(a)   X(a)
+   (!(a))|(G(a))   (!(a))|(G(a))
+   F(a)   F(a)   F(a)
+   a   a
+   a   a
+   a   a   a   a
+   (a)|(G(F(a)))   (a)|(G(F(a)))   (a)|(G(F(a)))   (a)|(G(F(a)))
+   a   a
+   a   a
+   a   a   a   a
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   1   1
+   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   1   1   1
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)
+   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))
+   1   1   1
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a
+   (a)|((a)U(b))   (a)|((a)U(b))   (a)|((a)U(b))
+   (a)|((a)U(c))   (a)|((a)U(c))   (a)|((a)U(c))
+   (a)|(X(a))   (X(a))U(a)   (a)|(X(a))   (a)|(X(a))
+   (a)|(X(G(a)))   (a)|(X(G(a)))
+   F(a)   F(a)
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   (a)|(X(G(a)))   (a)|(X(G(a)))
+   F(a)   F(a)
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   1   1   1   1
+   (a)|(G(!(a)))   (a)|(G(!(a)))
+   1   1
+   1   1   1
+   1   1
+   (a)|(G(!(a)))   (a)|(G(!(a)))
+   1   1   1
+   a   a   a
+   a   a   a
+   a   a   a   a   a   a
+   a   a
+   (a)|(F(G(a)))   (a)|(F(G(a)))   (a)|(F(G(a)))   (a)|(F(G(a)))
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)|(G(F(a)))   (a)|(G(F(a)))   (a)|(G(F(a)))   (a)|(G(F(a)))
+   a   a
+   a   a
+   a   a   a   a
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a
+   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a
+   F(a)   F(a)
+   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)
+   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))
+   1   1   1
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a
+   (a)|((a)U(b))   (a)|((a)U(b))   (a)|((a)U(b))
+   (a)|((a)U(c))   (a)|((a)U(c))   (a)|((a)U(c))
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a   a   a
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0   0   0
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0   0   0
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a
+   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))
+   (a)&(F(!(a)))   (a)&(F(!(a)))   (a)&(F(!(a)))   (a)&(F(!(a)))   (a)&(F(!(a)))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   (a)&((a)U(b))   (a)&((a)U(b))   (a)&((a)U(b))   (a)&((a)U(b))   (a)&((a)U(b))
+   (a)&((a)U(c))   (a)&((a)U(c))   (a)&((a)U(c))   (a)&((a)U(c))   (a)&((a)U(c))
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a
+   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))   (a)&((a)U(X(a)))
+   (a)&(F(!(a)))   (a)&(F(!(a)))   (a)&(F(!(a)))   (a)&(F(!(a)))   (a)&(F(!(a)))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   (a)&((a)U(b))   (a)&((a)U(b))   (a)&((a)U(b))   (a)&((a)U(b))   (a)&((a)U(b))
+   (a)&((a)U(c))   (a)&((a)U(c))   (a)&((a)U(c))   (a)&((a)U(c))   (a)&((a)U(c))
+   a   a   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a   a   a   a   a   a
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   1   1   1   1   1
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   1   1   1   1   1
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))
+   1   1   1   1   1
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   (a)|((a)U(b))   (a)|((a)U(b))   (a)|((a)U(b))   (a)|((a)U(b))   (a)|((a)U(b))
+   (a)|((a)U(c))   (a)|((a)U(c))   (a)|((a)U(c))   (a)|((a)U(c))   (a)|((a)U(c))
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))   (a)|((a)U(X(a)))
+   1   1   1   1   1
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   (a)|((a)U(b))   (a)|((a)U(b))   (a)|((a)U(b))   (a)|((a)U(b))   (a)|((a)U(b))
+   (a)|((a)U(c))   (a)|((a)U(c))   (a)|((a)U(c))   (a)|((a)U(c))   (a)|((a)U(c))
+   a   a   a   a   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a   a   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a   a
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(X(a)))U(a)   (X(X(a)))U(a)   (X(X(a)))U(a)
+   a   a   a
+   (X(G(a)))U(a)   (X(G(a)))U(a)   (X(G(a)))U(a)   (X(G(a)))U(a)
+   (X(F(a)))U(a)   (X(F(a)))U(a)   (X(F(a)))U(a)   (X(F(a)))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   !(a)   !(a)   !(a)
+   (X(a))U(G(a))   (X(a))U(G(a))   (X(a))U(G(a))   (X(a))U(G(a))
+   F(a)   F(a)   F(a)   F(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   a   a   a
+   (X(G(a)))U(a)   (X(G(a)))U(a)   (X(G(a)))U(a)   (X(G(a)))U(a)
+   (X(F(a)))U(a)   (X(F(a)))U(a)   (X(F(a)))U(a)   (X(F(a)))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   (!(a))U(X(a))   (!(a))U(X(a))   (!(a))U(X(a))
+   (!(a))U(G(a))   (!(a))U(G(a))   (!(a))U(G(a))   (!(a))U(G(a))
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a
+   (F(G(a)))U(a)   (F(G(a)))U(a)   (F(G(a)))U(a)   (F(G(a)))U(a)   (F(G(a)))U(a)   (F(G(a)))U(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   X(a)   X(a)   X(a)   X(a)
+   !(a)   !(a)   !(a)   !(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a   a
+   (G(F(a)))U(a)   (G(F(a)))U(a)   (G(F(a)))U(a)   (G(F(a)))U(a)   (G(F(a)))U(a)   (G(F(a)))U(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a   a
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   (a)U(X(X(a)))   (a)U(X(X(a)))   (a)U(X(X(a)))
+   (a)U(X(!(a)))   (a)U(X(!(a)))   (a)U(X(!(a)))
+   (a)U(X(G(a)))   (a)U(X(G(a)))   (a)U(X(G(a)))   (a)U(X(G(a)))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   (a)U(X(!(a)))   (a)U(X(!(a)))   (a)U(X(!(a)))
+   (a)U(X(G(a)))   (a)U(X(G(a)))   (a)U(X(G(a)))   (a)U(X(G(a)))
+   X(F(a))   X(F(a))   X(F(a))   X(F(a))
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   a   a   a
+   (a)U(G(!(a)))   (a)U(G(!(a)))   (a)U(G(!(a)))   (a)U(G(!(a)))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   (a)U(G(!(a)))   (a)U(G(!(a)))   (a)U(G(!(a)))   (a)U(G(!(a)))
+   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))   F(G(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))   G(F(a))
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)
+   G(a)   G(a)   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)U((a)&(b))   (a)U((a)&(b))   ((a)U((a)&(b)))U((a)&(b))
+   (a)U((a)&(c))   (a)U((a)&(c))   ((a)U((a)&(c)))U((a)&(c))
+   (a)&(X(a))   (a)&(X(a))   (a)&(X(a))
+   0   0   0
+   G(a)   G(a)   G(a)   G(a)
+   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)U((a)&(b))   (a)U((a)&(b))   ((a)U((a)&(b)))U((a)&(b))
+   (a)U((a)&(c))   (a)U((a)&(c))   ((a)U((a)&(c)))U((a)&(c))
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   a   a   a
+   a   a   a
+   a   a   a   a   a   a
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   1   1   1
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)|(b)   (a)|(b)   (a)|(b)
+   (a)|(c)   (a)|(c)   (a)|(c)
+   (a)|(X(a))   (a)|(X(a))   (a)|(X(a))
+   1   1   1
+   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)
+   a   a   a
+   a   a   a
+   a   a   a   a   a
+   (a)|(b)   (a)|(b)   (a)|(b)
+   (a)|(c)   (a)|(c)   (a)|(c)
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a
+   a   a   a   a   a   a   a   a   a
+   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)   (X(a))U(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a   a
+   F(a)   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a   a
+   a   a   a   a   a
+   a   a   a   a   a   a
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))   (a)U(X(a))
+   F(!(a))   F(!(a))   F(!(a))   F(!(a))
+   G(a)   G(a)   G(a)   G(a)   G(a)
+   F(a)   F(a)   F(a)   F(a)   F(a)
+   a   a   a   a
+   a   a   a   a
+   a   a   a   a   a
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   b   b   b
+   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)   G(b)
+   b   b
+   b   b   b
+   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)   G(b)
+   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   b   b   b   b
+   (b)|(X(b))   (b)|(X(b))
+   b   b   b
+   F(b)   F(b)
+   b   b   b
+   (b)|(X(b))   (b)|(X(b))
+   b   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b   b
+   b   b   b
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (b)U((a)&(b))   (b)U((a)&(b))   ((b)U((a)&(b)))U((a)&(b))
+   (b)U((b)&(c))   (b)U((b)&(c))   ((b)U((b)&(c)))U((b)&(c))
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (b)U((a)&(b))   (b)U((a)&(b))   ((b)U((a)&(b)))U((a)&(b))
+   (b)U((b)&(c))   (b)U((b)&(c))   ((b)U((b)&(c)))U((b)&(c))
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)
+   (b)&(X(F(b)))   (b)&(X(F(b)))
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)
+   X(b)   X(b)
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)
+   (b)&(X(F(b)))   (b)&(X(F(b)))
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0
+   0   0
+   (b)&(F(!(b)))   (b)&(F(!(b)))
+   0   0   0
+   0   0
+   (!(b))&(F(b))   (!(b))&(F(b))
+   0   0   0
+   (b)&(F(!(b)))   (b)&(F(!(b)))
+   0   0
+   0   0   0
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   (b)&(F(G(b)))   (b)&(F(G(b)))   (b)&(F(G(b)))   (b)&(F(G(b)))
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   0   0
+   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   (b)&(G(F(b)))   (b)&(G(F(b)))   (b)&(G(F(b)))   (b)&(G(F(b)))
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   X(b)   X(b)
+   (!(b))&(F(b))   (!(b))&(F(b))
+   G(b)   G(b)   G(b)
+   b   b
+   b   b
+   b   b   b   b
+   b   b
+   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))
+   (b)&(F(!(b)))   (b)&(F(!(b)))   (b)&(F(!(b)))
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   (b)&((b)U(a))   (b)&((b)U(a))   (b)&((b)U(a))
+   (b)&((b)U(c))   (b)&((b)U(c))   (b)&((b)U(c))
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)
+   (b)&(X(F(b)))   (b)&(X(F(b)))
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)
+   (b)&(X(F(b)))   (b)&(X(F(b)))
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0
+   0   0
+   (b)&(F(!(b)))   (b)&(F(!(b)))
+   0   0   0
+   (b)&(F(!(b)))   (b)&(F(!(b)))
+   0   0
+   0   0   0
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)
+   (b)&(F(G(b)))   (b)&(F(G(b)))   (b)&(F(G(b)))   (b)&(F(G(b)))
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   (b)&(G(F(b)))   (b)&(G(F(b)))   (b)&(G(F(b)))   (b)&(G(F(b)))
+   G(b)   G(b)
+   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b
+   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   G(b)   G(b)
+   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))
+   (b)&(F(!(b)))   (b)&(F(!(b)))   (b)&(F(!(b)))
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   (b)&((b)U(a))   (b)&((b)U(a))   (b)&((b)U(a))
+   (b)&((b)U(c))   (b)&((b)U(c))   (b)&((b)U(c))
+   b   b   b
+   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)
+   b   b   b
+   b   b   b   b
+   (b)&(X(b))   (b)&(X(b))
+   G(b)   G(b)
+   b   b   b
+   b   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b   b   b
+   (b)|(X(b))   (b)|(X(b))
+   b   b
+   F(b)   F(b)   F(b)
+   b   b   b   b
+   (b)|(X(b))   (b)|(X(b))
+   b   b
+   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b   b
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (b)|(X(b))   (b)|((b)U(X(b)))   (b)|(X(b))   (b)|(X(b))
+   1   1   1   1
+   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b   b
+   (a)|(b)   (b)|((b)U(a))   (a)|(b)   (a)|(b)
+   (b)|(c)   (b)|((b)U(c))   (b)|(c)   (b)|(c)
+   (b)|(X(b))   (b)|((b)U(X(b)))   (b)|(X(b))   (b)|(X(b))
+   1   1   1   1
+   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b   b
+   (a)|(b)   (b)|((b)U(a))   (a)|(b)   (a)|(b)
+   (b)|(c)   (b)|((b)U(c))   (b)|(c)   (b)|(c)
+   (b)|(X(b))   (X(b))U(b)   (b)|(X(b))   (b)|(X(b))
+   (b)|(X(G(b)))   (b)|(X(G(b)))
+   F(b)   F(b)
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   X(b)   X(b)
+   F(b)   F(b)
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   (b)|(X(G(b)))   (b)|(X(G(b)))
+   F(b)   F(b)
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   1   1   1   1
+   (b)|(G(!(b)))   (b)|(G(!(b)))
+   1   1
+   1   1   1
+   (!(b))|(G(b))   (!(b))|(G(b))
+   1   1
+   1   1   1
+   1   1
+   (b)|(G(!(b)))   (b)|(G(!(b)))
+   1   1   1
+   b   b   b
+   b   b   b
+   b   b   b   b   b   b
+   b   b
+   (b)|(F(G(b)))   (b)|(F(G(b)))   (b)|(F(G(b)))   (b)|(F(G(b)))
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   X(b)   X(b)
+   (!(b))|(G(b))   (!(b))|(G(b))
+   F(b)   F(b)   F(b)
+   b   b
+   b   b
+   b   b   b   b
+   (b)|(G(F(b)))   (b)|(G(F(b)))   (b)|(G(F(b)))   (b)|(G(F(b)))
+   b   b
+   b   b
+   b   b   b   b
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   1   1
+   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   1   1   1
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)
+   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))
+   1   1   1
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b
+   (b)|((b)U(a))   (b)|((b)U(a))   (b)|((b)U(a))
+   (b)|((b)U(c))   (b)|((b)U(c))   (b)|((b)U(c))
+   (b)|(X(b))   (X(b))U(b)   (b)|(X(b))   (b)|(X(b))
+   (b)|(X(G(b)))   (b)|(X(G(b)))
+   F(b)   F(b)
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   (b)|(X(G(b)))   (b)|(X(G(b)))
+   F(b)   F(b)
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   1   1   1   1
+   (b)|(G(!(b)))   (b)|(G(!(b)))
+   1   1
+   1   1   1
+   1   1
+   (b)|(G(!(b)))   (b)|(G(!(b)))
+   1   1   1
+   b   b   b
+   b   b   b
+   b   b   b   b   b   b
+   b   b
+   (b)|(F(G(b)))   (b)|(F(G(b)))   (b)|(F(G(b)))   (b)|(F(G(b)))
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (b)|(G(F(b)))   (b)|(G(F(b)))   (b)|(G(F(b)))   (b)|(G(F(b)))
+   b   b
+   b   b
+   b   b   b   b
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b
+   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b
+   F(b)   F(b)
+   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)
+   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))
+   1   1   1
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b
+   (b)|((b)U(a))   (b)|((b)U(a))   (b)|((b)U(a))
+   (b)|((b)U(c))   (b)|((b)U(c))   (b)|((b)U(c))
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b   b   b
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0   0   0
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0   0   0
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b
+   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))
+   (b)&(F(!(b)))   (b)&(F(!(b)))   (b)&(F(!(b)))   (b)&(F(!(b)))   (b)&(F(!(b)))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   (b)&((b)U(a))   (b)&((b)U(a))   (b)&((b)U(a))   (b)&((b)U(a))   (b)&((b)U(a))
+   (b)&((b)U(c))   (b)&((b)U(c))   (b)&((b)U(c))   (b)&((b)U(c))   (b)&((b)U(c))
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b
+   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))   (b)&((b)U(X(b)))
+   (b)&(F(!(b)))   (b)&(F(!(b)))   (b)&(F(!(b)))   (b)&(F(!(b)))   (b)&(F(!(b)))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   (b)&((b)U(a))   (b)&((b)U(a))   (b)&((b)U(a))   (b)&((b)U(a))   (b)&((b)U(a))
+   (b)&((b)U(c))   (b)&((b)U(c))   (b)&((b)U(c))   (b)&((b)U(c))   (b)&((b)U(c))
+   b   b   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b   b   b   b   b   b
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   1   1   1   1   1
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   1   1   1   1   1
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))
+   1   1   1   1   1
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   (b)|((b)U(a))   (b)|((b)U(a))   (b)|((b)U(a))   (b)|((b)U(a))   (b)|((b)U(a))
+   (b)|((b)U(c))   (b)|((b)U(c))   (b)|((b)U(c))   (b)|((b)U(c))   (b)|((b)U(c))
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))   (b)|((b)U(X(b)))
+   1   1   1   1   1
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   (b)|((b)U(a))   (b)|((b)U(a))   (b)|((b)U(a))   (b)|((b)U(a))   (b)|((b)U(a))
+   (b)|((b)U(c))   (b)|((b)U(c))   (b)|((b)U(c))   (b)|((b)U(c))   (b)|((b)U(c))
+   b   b   b   b   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b   b   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b   b
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(X(b)))U(b)   (X(X(b)))U(b)   (X(X(b)))U(b)
+   b   b   b
+   (X(G(b)))U(b)   (X(G(b)))U(b)   (X(G(b)))U(b)   (X(G(b)))U(b)
+   (X(F(b)))U(b)   (X(F(b)))U(b)   (X(F(b)))U(b)   (X(F(b)))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   !(b)   !(b)   !(b)
+   (X(b))U(G(b))   (X(b))U(G(b))   (X(b))U(G(b))   (X(b))U(G(b))
+   F(b)   F(b)   F(b)   F(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   b   b   b
+   (X(G(b)))U(b)   (X(G(b)))U(b)   (X(G(b)))U(b)   (X(G(b)))U(b)
+   (X(F(b)))U(b)   (X(F(b)))U(b)   (X(F(b)))U(b)   (X(F(b)))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   (!(b))U(X(b))   (!(b))U(X(b))   (!(b))U(X(b))
+   (!(b))U(G(b))   (!(b))U(G(b))   (!(b))U(G(b))   (!(b))U(G(b))
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b
+   (F(G(b)))U(b)   (F(G(b)))U(b)   (F(G(b)))U(b)   (F(G(b)))U(b)   (F(G(b)))U(b)   (F(G(b)))U(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   X(b)   X(b)   X(b)   X(b)
+   !(b)   !(b)   !(b)   !(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b   b
+   (G(F(b)))U(b)   (G(F(b)))U(b)   (G(F(b)))U(b)   (G(F(b)))U(b)   (G(F(b)))U(b)   (G(F(b)))U(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b   b
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   (b)U(X(X(b)))   (b)U(X(X(b)))   (b)U(X(X(b)))
+   (b)U(X(!(b)))   (b)U(X(!(b)))   (b)U(X(!(b)))
+   (b)U(X(G(b)))   (b)U(X(G(b)))   (b)U(X(G(b)))   (b)U(X(G(b)))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   (b)U(X(!(b)))   (b)U(X(!(b)))   (b)U(X(!(b)))
+   (b)U(X(G(b)))   (b)U(X(G(b)))   (b)U(X(G(b)))   (b)U(X(G(b)))
+   X(F(b))   X(F(b))   X(F(b))   X(F(b))
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   b   b   b
+   (b)U(G(!(b)))   (b)U(G(!(b)))   (b)U(G(!(b)))   (b)U(G(!(b)))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   (b)U(G(!(b)))   (b)U(G(!(b)))   (b)U(G(!(b)))   (b)U(G(!(b)))
+   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))   F(G(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))   G(F(b))
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)
+   G(b)   G(b)   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (b)U((a)&(b))   (b)U((a)&(b))   ((b)U((a)&(b)))U((a)&(b))
+   (b)U((b)&(c))   (b)U((b)&(c))   ((b)U((b)&(c)))U((b)&(c))
+   (b)&(X(b))   (b)&(X(b))   (b)&(X(b))
+   0   0   0
+   G(b)   G(b)   G(b)   G(b)
+   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (b)U((a)&(b))   (b)U((a)&(b))   ((b)U((a)&(b)))U((a)&(b))
+   (b)U((b)&(c))   (b)U((b)&(c))   ((b)U((b)&(c)))U((b)&(c))
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   b   b   b
+   b   b   b
+   b   b   b   b   b   b
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   1   1   1
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (a)|(b)   (a)|(b)   (a)|(b)
+   (b)|(c)   (b)|(c)   (b)|(c)
+   (b)|(X(b))   (b)|(X(b))   (b)|(X(b))
+   1   1   1
+   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)
+   b   b   b
+   b   b   b
+   b   b   b   b   b
+   (a)|(b)   (a)|(b)   (a)|(b)
+   (b)|(c)   (b)|(c)   (b)|(c)
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b
+   b   b   b   b   b   b   b   b   b
+   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)   (X(b))U(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b   b
+   F(b)   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b   b
+   b   b   b   b   b
+   b   b   b   b   b   b
+   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)   (a)U(b)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))   (b)U(X(b))
+   F(!(b))   F(!(b))   F(!(b))   F(!(b))
+   G(b)   G(b)   G(b)   G(b)   G(b)
+   F(b)   F(b)   F(b)   F(b)   F(b)
+   b   b   b   b
+   b   b   b   b
+   b   b   b   b   b
+   (b)U(a)   (b)U(a)   (b)U(a)   (b)U(a)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   c   c   c
+   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)   G(c)
+   c   c
+   c   c   c
+   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)   G(c)
+   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   c   c   c   c
+   (c)|(X(c))   (c)|(X(c))
+   c   c   c
+   F(c)   F(c)
+   c   c   c
+   (c)|(X(c))   (c)|(X(c))
+   c   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c   c
+   c   c   c
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (c)U((a)&(c))   (c)U((a)&(c))   ((c)U((a)&(c)))U((a)&(c))
+   (c)U((b)&(c))   (c)U((b)&(c))   ((c)U((b)&(c)))U((b)&(c))
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (c)U((a)&(c))   (c)U((a)&(c))   ((c)U((a)&(c)))U((a)&(c))
+   (c)U((b)&(c))   (c)U((b)&(c))   ((c)U((b)&(c)))U((b)&(c))
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)
+   (c)&(X(F(c)))   (c)&(X(F(c)))
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)
+   X(c)   X(c)
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)
+   (c)&(X(F(c)))   (c)&(X(F(c)))
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0
+   0   0
+   (c)&(F(!(c)))   (c)&(F(!(c)))
+   0   0   0
+   0   0
+   (!(c))&(F(c))   (!(c))&(F(c))
+   0   0   0
+   (c)&(F(!(c)))   (c)&(F(!(c)))
+   0   0
+   0   0   0
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   (c)&(F(G(c)))   (c)&(F(G(c)))   (c)&(F(G(c)))   (c)&(F(G(c)))
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   0   0
+   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   (c)&(G(F(c)))   (c)&(G(F(c)))   (c)&(G(F(c)))   (c)&(G(F(c)))
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   X(c)   X(c)
+   (!(c))&(F(c))   (!(c))&(F(c))
+   G(c)   G(c)   G(c)
+   c   c
+   c   c
+   c   c   c   c
+   c   c
+   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))
+   (c)&(F(!(c)))   (c)&(F(!(c)))   (c)&(F(!(c)))
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   (c)&((c)U(a))   (c)&((c)U(a))   (c)&((c)U(a))
+   (c)&((c)U(b))   (c)&((c)U(b))   (c)&((c)U(b))
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)
+   (c)&(X(F(c)))   (c)&(X(F(c)))
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)
+   (c)&(X(F(c)))   (c)&(X(F(c)))
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0
+   0   0
+   (c)&(F(!(c)))   (c)&(F(!(c)))
+   0   0   0
+   (c)&(F(!(c)))   (c)&(F(!(c)))
+   0   0
+   0   0   0
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)
+   (c)&(F(G(c)))   (c)&(F(G(c)))   (c)&(F(G(c)))   (c)&(F(G(c)))
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   (c)&(G(F(c)))   (c)&(G(F(c)))   (c)&(G(F(c)))   (c)&(G(F(c)))
+   G(c)   G(c)
+   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c
+   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   G(c)   G(c)
+   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))
+   (c)&(F(!(c)))   (c)&(F(!(c)))   (c)&(F(!(c)))
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   (c)&((c)U(a))   (c)&((c)U(a))   (c)&((c)U(a))
+   (c)&((c)U(b))   (c)&((c)U(b))   (c)&((c)U(b))
+   c   c   c
+   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)
+   c   c   c
+   c   c   c   c
+   (c)&(X(c))   (c)&(X(c))
+   G(c)   G(c)
+   c   c   c
+   c   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c   c   c
+   (c)|(X(c))   (c)|(X(c))
+   c   c
+   F(c)   F(c)   F(c)
+   c   c   c   c
+   (c)|(X(c))   (c)|(X(c))
+   c   c
+   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c   c
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)|(X(c))   (c)|((c)U(X(c)))   (c)|(X(c))   (c)|(X(c))
+   1   1   1   1
+   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c   c
+   (a)|(c)   (c)|((c)U(a))   (a)|(c)   (a)|(c)
+   (b)|(c)   (c)|((c)U(b))   (b)|(c)   (b)|(c)
+   (c)|(X(c))   (c)|((c)U(X(c)))   (c)|(X(c))   (c)|(X(c))
+   1   1   1   1
+   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c   c
+   (a)|(c)   (c)|((c)U(a))   (a)|(c)   (a)|(c)
+   (b)|(c)   (c)|((c)U(b))   (b)|(c)   (b)|(c)
+   (c)|(X(c))   (X(c))U(c)   (c)|(X(c))   (c)|(X(c))
+   (c)|(X(G(c)))   (c)|(X(G(c)))
+   F(c)   F(c)
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   X(c)   X(c)
+   F(c)   F(c)
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   (c)|(X(G(c)))   (c)|(X(G(c)))
+   F(c)   F(c)
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   1   1   1   1
+   (c)|(G(!(c)))   (c)|(G(!(c)))
+   1   1
+   1   1   1
+   (!(c))|(G(c))   (!(c))|(G(c))
+   1   1
+   1   1   1
+   1   1
+   (c)|(G(!(c)))   (c)|(G(!(c)))
+   1   1   1
+   c   c   c
+   c   c   c
+   c   c   c   c   c   c
+   c   c
+   (c)|(F(G(c)))   (c)|(F(G(c)))   (c)|(F(G(c)))   (c)|(F(G(c)))
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   X(c)   X(c)
+   (!(c))|(G(c))   (!(c))|(G(c))
+   F(c)   F(c)   F(c)
+   c   c
+   c   c
+   c   c   c   c
+   (c)|(G(F(c)))   (c)|(G(F(c)))   (c)|(G(F(c)))   (c)|(G(F(c)))
+   c   c
+   c   c
+   c   c   c   c
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   1   1
+   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   1   1   1
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))
+   1   1   1
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c
+   (c)|((c)U(a))   (c)|((c)U(a))   (c)|((c)U(a))
+   (c)|((c)U(b))   (c)|((c)U(b))   (c)|((c)U(b))
+   (c)|(X(c))   (X(c))U(c)   (c)|(X(c))   (c)|(X(c))
+   (c)|(X(G(c)))   (c)|(X(G(c)))
+   F(c)   F(c)
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   (c)|(X(G(c)))   (c)|(X(G(c)))
+   F(c)   F(c)
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   1   1   1   1
+   (c)|(G(!(c)))   (c)|(G(!(c)))
+   1   1
+   1   1   1
+   1   1
+   (c)|(G(!(c)))   (c)|(G(!(c)))
+   1   1   1
+   c   c   c
+   c   c   c
+   c   c   c   c   c   c
+   c   c
+   (c)|(F(G(c)))   (c)|(F(G(c)))   (c)|(F(G(c)))   (c)|(F(G(c)))
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (c)|(G(F(c)))   (c)|(G(F(c)))   (c)|(G(F(c)))   (c)|(G(F(c)))
+   c   c
+   c   c
+   c   c   c   c
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c
+   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c
+   F(c)   F(c)
+   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))
+   1   1   1
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c
+   (c)|((c)U(a))   (c)|((c)U(a))   (c)|((c)U(a))
+   (c)|((c)U(b))   (c)|((c)U(b))   (c)|((c)U(b))
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c   c   c
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0   0   0
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0   0   0
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c
+   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))
+   (c)&(F(!(c)))   (c)&(F(!(c)))   (c)&(F(!(c)))   (c)&(F(!(c)))   (c)&(F(!(c)))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   (c)&((c)U(a))   (c)&((c)U(a))   (c)&((c)U(a))   (c)&((c)U(a))   (c)&((c)U(a))
+   (c)&((c)U(b))   (c)&((c)U(b))   (c)&((c)U(b))   (c)&((c)U(b))   (c)&((c)U(b))
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c
+   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))   (c)&((c)U(X(c)))
+   (c)&(F(!(c)))   (c)&(F(!(c)))   (c)&(F(!(c)))   (c)&(F(!(c)))   (c)&(F(!(c)))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   (c)&((c)U(a))   (c)&((c)U(a))   (c)&((c)U(a))   (c)&((c)U(a))   (c)&((c)U(a))
+   (c)&((c)U(b))   (c)&((c)U(b))   (c)&((c)U(b))   (c)&((c)U(b))   (c)&((c)U(b))
+   c   c   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c   c   c   c   c   c
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   1   1   1   1   1
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   1   1   1   1   1
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))
+   1   1   1   1   1
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   (c)|((c)U(a))   (c)|((c)U(a))   (c)|((c)U(a))   (c)|((c)U(a))   (c)|((c)U(a))
+   (c)|((c)U(b))   (c)|((c)U(b))   (c)|((c)U(b))   (c)|((c)U(b))   (c)|((c)U(b))
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))   (c)|((c)U(X(c)))
+   1   1   1   1   1
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   (c)|((c)U(a))   (c)|((c)U(a))   (c)|((c)U(a))   (c)|((c)U(a))   (c)|((c)U(a))
+   (c)|((c)U(b))   (c)|((c)U(b))   (c)|((c)U(b))   (c)|((c)U(b))   (c)|((c)U(b))
+   c   c   c   c   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c   c   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c   c
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(X(c)))U(c)   (X(X(c)))U(c)   (X(X(c)))U(c)
+   c   c   c
+   (X(G(c)))U(c)   (X(G(c)))U(c)   (X(G(c)))U(c)   (X(G(c)))U(c)
+   (X(F(c)))U(c)   (X(F(c)))U(c)   (X(F(c)))U(c)   (X(F(c)))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   !(c)   !(c)   !(c)
+   (X(c))U(G(c))   (X(c))U(G(c))   (X(c))U(G(c))   (X(c))U(G(c))
+   F(c)   F(c)   F(c)   F(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   c   c   c
+   (X(G(c)))U(c)   (X(G(c)))U(c)   (X(G(c)))U(c)   (X(G(c)))U(c)
+   (X(F(c)))U(c)   (X(F(c)))U(c)   (X(F(c)))U(c)   (X(F(c)))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   (!(c))U(X(c))   (!(c))U(X(c))   (!(c))U(X(c))
+   (!(c))U(G(c))   (!(c))U(G(c))   (!(c))U(G(c))   (!(c))U(G(c))
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c
+   (F(G(c)))U(c)   (F(G(c)))U(c)   (F(G(c)))U(c)   (F(G(c)))U(c)   (F(G(c)))U(c)   (F(G(c)))U(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   X(c)   X(c)   X(c)   X(c)
+   !(c)   !(c)   !(c)   !(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c   c
+   (G(F(c)))U(c)   (G(F(c)))U(c)   (G(F(c)))U(c)   (G(F(c)))U(c)   (G(F(c)))U(c)   (G(F(c)))U(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c   c
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   (c)U(X(X(c)))   (c)U(X(X(c)))   (c)U(X(X(c)))
+   (c)U(X(!(c)))   (c)U(X(!(c)))   (c)U(X(!(c)))
+   (c)U(X(G(c)))   (c)U(X(G(c)))   (c)U(X(G(c)))   (c)U(X(G(c)))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   (c)U(X(!(c)))   (c)U(X(!(c)))   (c)U(X(!(c)))
+   (c)U(X(G(c)))   (c)U(X(G(c)))   (c)U(X(G(c)))   (c)U(X(G(c)))
+   X(F(c))   X(F(c))   X(F(c))   X(F(c))
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   c   c   c
+   (c)U(G(!(c)))   (c)U(G(!(c)))   (c)U(G(!(c)))   (c)U(G(!(c)))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   (c)U(G(!(c)))   (c)U(G(!(c)))   (c)U(G(!(c)))   (c)U(G(!(c)))
+   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))   F(G(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))   G(F(c))
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)
+   G(c)   G(c)   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (c)U((a)&(c))   (c)U((a)&(c))   ((c)U((a)&(c)))U((a)&(c))
+   (c)U((b)&(c))   (c)U((b)&(c))   ((c)U((b)&(c)))U((b)&(c))
+   (c)&(X(c))   (c)&(X(c))   (c)&(X(c))
+   0   0   0
+   G(c)   G(c)   G(c)   G(c)
+   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (c)U((a)&(c))   (c)U((a)&(c))   ((c)U((a)&(c)))U((a)&(c))
+   (c)U((b)&(c))   (c)U((b)&(c))   ((c)U((b)&(c)))U((b)&(c))
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   c   c   c
+   c   c   c
+   c   c   c   c   c   c
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   1   1   1
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (a)|(c)   (a)|(c)   (a)|(c)
+   (b)|(c)   (b)|(c)   (b)|(c)
+   (c)|(X(c))   (c)|(X(c))   (c)|(X(c))
+   1   1   1
+   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)
+   c   c   c
+   c   c   c
+   c   c   c   c   c
+   (a)|(c)   (a)|(c)   (a)|(c)
+   (b)|(c)   (b)|(c)   (b)|(c)
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c
+   c   c   c   c   c   c   c   c   c
+   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)   (X(c))U(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c   c
+   F(c)   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c   c
+   c   c   c   c   c
+   c   c   c   c   c   c
+   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)   (a)U(c)
+   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)   (b)U(c)
+   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))   (c)U(X(c))
+   F(!(c))   F(!(c))   F(!(c))   F(!(c))
+   G(c)   G(c)   G(c)   G(c)   G(c)
+   F(c)   F(c)   F(c)   F(c)   F(c)
+   c   c   c   c
+   c   c   c   c
+   c   c   c   c   c
+   (c)U(a)   (c)U(a)   (c)U(a)   (c)U(a)
+   (c)U(b)   (c)U(b)   (c)U(b)   (c)U(b)

@@ -19,6 +19,7 @@
 #include <spot/twaalgos/are_isomorphic.hh>
 #include <spot/twaalgos/contains.hh>
 
+// SPOT IMPLEMENTATION: first configuration in the thesis.
 
 // USED TO COMPARE TWO AUTOMATAS GENERATED FROM TWO DIFFERENT FORMULAS AND WITH SPOT TRANSALTOR
 // Test equivalences and isomorphism of two automata.
@@ -63,7 +64,8 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile, std::string delimiter) {
     bool exist_not_isomorphic = false;
     // Read the file line by line
     std::string line;
-
+    int num_isomorphic = 0;
+    int num_equal = 0;
 
     std::set<std::string> setFormulas;
     std::set<std::string> setUNSAT;
@@ -109,19 +111,29 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile, std::string delimiter) {
           std::string mutation_string = "";
           std::stringstream mutatio_stream;
           spot::formula mutation_formula = spot::parse_formula(str);
-          std::cout << original_pf << " and " << str << std::endl;
+          // std::cout << original_pf << " and " << str << std::endl;
 
           // create the TGBA
           spot::twa_graph_ptr mutation_automata = trans.run(mutation_formula);
           print_hoa(mutatio_stream, mutation_automata);
           mutation_string = mutatio_stream.str();
           
-          // Test if two automatas are equivalent with the spot function spot::are_equivalent
+          // Test if the two automatas are structurally equal
+          if (original_string != mutation_string) {
+            std::cout << original_string << mutation_string<< std::endl;
+            hasDifferentAutomata = true;
+          }
+          // print_hoa(std::cout, original_automata);
+          // print_hoa(std::cout, mutation_automata);
+
+          // Test if two automatas are isomorphic with the spot function spot::are_isomorphic
           if (!spot::isomorphism_checker::are_isomorphic(original_automata,mutation_automata)){
             std::cout << "The two automata are not isomorphic " << '\n' << original_string << '\n' << mutation_string << std::endl;
             std::cout << "Original formula: [" << original_formula << "] mutant formula [" << str <<"]" <<  std::endl;
             std::cout << '\n' << std::endl;
             exist_not_isomorphic = true;
+          } else {
+            num_isomorphic++;
           }
           
           // Test if two automatas are equivalent with the spot function spot::are_equivalent
@@ -130,18 +142,16 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile, std::string delimiter) {
             std::cout << "Original formula: [" << original_formula << "] mutant formula [" << str <<"]" <<  std::endl;
             std::cout << '\n' << std::endl;
             exist_not_equivalent = true;
+          } else {
+            num_equal++;
           }
-
-          // test if two automatas are equivalent using emptiness checking.
-          // if (check_emptiness_two_automaton(original_pf, mutation_formula) == 1) {
-          //   std::cout << "The two automata are not equivalent " << '\n' << original_string << '\n' << mutation_string << std::endl;
-          //   std::cout << "Original formula: [" << original_formula << "] mutant formula [" << str <<"]" <<  std::endl;
-          //   std::cout << '\n' << std::endl;
-          // }
 
         }
 
       }
+    }
+    if (!hasDifferentAutomata) {
+      std::cout << "All automata are equal" << std::endl;
     }
     if (!exist_not_equivalent) {
       std::cout << "All automata are equivalent" << std::endl;
@@ -149,6 +159,8 @@ spot::twa_graph_ptr ltl_2_tgba(std::string readFile, std::string delimiter) {
     if (!exist_not_isomorphic) {
       std::cout << "All automata are isomorphic" << std::endl;
     }
+    std::cout << "Number of isomorphic automata: " << num_isomorphic << std::endl;
+    std::cout << "Number of equivalent automata: " << num_equal << std::endl;
     return nullptr;
 }
 

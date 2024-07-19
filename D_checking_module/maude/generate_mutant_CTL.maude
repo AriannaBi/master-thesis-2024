@@ -1,0 +1,81 @@
+mod gen_mutation_CTL is
+   sort Formula .
+   ops b=0 b=1 b=2 s1=0 s1=1 s1=2 s1=3 s1=4 s1=5 : -> Formula .
+
+   
+   
+
+--- operators
+   op X : Formula -> Formula . ---    neXt
+   op ! : Formula -> Formula . ---    not
+   op F : Formula -> Formula . ---    e|entually
+   op G : Formula -> Formula . ---    always
+   op (_)&(_) : Formula Formula -> Formula . ---    and
+   op (_)|(_) : Formula Formula -> Formula . ---    or
+   op (_)U(_) : Formula Formula -> Formula . ---    until
+   --- op _=>_ : Formula Formula -> Formula . ---    implication
+   --- op _<=>_ : Formula Formula -> Formula . ---    implication
+
+   --- CTL
+   op A[X(_)] : Formula -> Formula . ---    path quantifier
+   op A[G(_)] : Formula -> Formula . ---    path quantifier
+   op A[F(_)] : Formula -> Formula . ---    path quantifier
+   op A[((_)U(_))] : Formula Formula -> Formula . ---    path quantifier
+   
+   op E[X(_)] : Formula -> Formula . ---    path quantifier
+   op E[G(_)] : Formula -> Formula . ---    path quantifier
+   op E[F(_)] : Formula -> Formula . ---    path quantifier
+   op E[((_)U(_))] : Formula Formula -> Formula . ---    path quantifier
+
+--- |ariables
+   vars N M P : Formula .
+
+********************************* rules **********************************************
+   rl [paper] : !(A[F (M)]) => E[G (!(M))] .
+   rl [duality1] : A[X (M)] => !(E[X(!(M))]) .
+   rl [duality2] : A[F (M)] => !(E[G(!(M))]) .
+   rl [duality3] : E[X (M)] => !(A[X(!(M))]) .
+   rl [duality4] : E[F (M)] => !(A[G(!(M))]) .
+   rl [duality5] :  A [((M)U(N))] => (!(E [((!(N)) U (((!(M)) & (!(N)))))])) & (!(E[G(!(N))])) .
+   rl [duality6] :  A [((M)U(N))] =>  (!(E [(((M) & (!(N))) U ((!(M)) & (!(N))))])) & (!(E[G ((M) & (!(N)))])) .
+   
+   rl [distributi|e1] : A[G ((M) & (N))] => (A[G(M)]) & (A[G(N)]) .
+   rl [distributi|e2] : E[G ((M) | (N))] => (E[F(M)]) | (E[F(N)]) .
+
+   rl [expansion_law1] : A [((M) U (N))] => (N) | ((M) & (A[X(A[((M) U (N))])])) .
+   rl [expansion_law2] : A[F(M)] => (M) | (A[X(A[F(M)])]) .
+   rl [expansion_law3] : A[G(M)] => (M) & (A[X(A[G(M)])]) .
+
+   rl [expansion_law4] : E [((M) U (N))] => (N) | ((M) & (E[X(E[((M) U (N))])])) .
+   rl [expansion_law5] : E[F(M)] => (M) | (E[X(E[F(M)])]) .
+   rl [expansion_law6] : E[G(M)] => (M) & (E[X(E[G(M)])]) .
+
+   ******************************* end rules *******************************************
+   
+   ********************************* rules_re|ersed **********************************************
+   rl [paper_re|erse] : E[G (!(M))] => !(A[F (M)]) .
+   rl [duality1_re|erse] : !(E[X(!(M))]) => A[X (M)] .
+   rl [duality2_re|erse] :  !(E[G(!(M))]) => A[F (M)] .
+   rl [duality3_re|erse] :  !(A[X(!(M))]) => E[X (M)] .
+   rl [duality4_re|erse] :  !(A[G(!(M))]) => E[F (M)] .
+   rl [duality5_re|erse] :   (!(E [((!(N)) U (((!(M)) & (!(N)))))])) & (!(E[G(!(N))])) => A [((M)U(N))] .
+   rl [duality6_re|erse] :    (!(E[ (((M) & (!(N))) U ((!(M)) & (!(N))))])) & (!(E[G ((M) & (!(N)))])) => A [((M)U(N))] .
+   
+   rl [distributi|e1_re|erse] :  (A[G(M)]) & (A[G(N)]) => A[G ((M) & (N))] .
+   rl [distributi|e2_re|erse] :  (E[F(M)]) | (E[F(N)]) => E[G ((M) | (N))] .
+
+   rl [expansion_law1_re|erse] :  (N) | ((M) & (A[X(A[((M) U (N))])])) => A [((M) U (N))] .
+   rl [expansion_law2_re|erse] : (M) | (A[X(A[F(M)])]) => A[F(M)] .
+   rl [expansion_law3_re|erse] :  (M) & (A[X(A[G(M)])]) => A[G(M)] .
+
+   rl [expansion_law4_re|erse] :  (N) | ((M) & (E[X(E[((M) U (N))])])) => E [((M) U (N))] .
+   rl [expansion_law5_re|erse] :  (M) | (E[X(E[F(M)])]) => E[F(M)] .
+   rl [expansion_law6_re|erse] : (M) & (E[X(E[G(M)])]) => E[G(M)] .
+   ******************************* end rules_re|ersed *******************************************
+
+--- ******************************* end rules *******************************************
+
+
+--- ./ctl-sat "!(((AF(a)) -> (AF(a))) & ((AF(a)) -> (AF(a))))"
+
+endm

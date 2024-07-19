@@ -1,0 +1,35 @@
+
+
+mod gen_formula_LTL is
+   sort Formula .
+
+   ops a b c : -> Formula .
+   
+
+   --- LTL operators
+   op Not(_) : Formula -> Formula . 
+   op Or(_,_) : Formula Formula -> Formula . 
+   op And(_,_) : Formula Formula -> Formula .
+   op Implies(_,_) : Formula Formula -> Formula .
+   op Xor(_,_) : Formula Formula -> Formula .
+   op If(_,_,_) : Formula Formula Formula -> Formula .
+   
+   ---   Path quantifiers
+   vars M : Formula .
+
+   --- Formula operators
+   rl [and] : M => And(M,M) .
+   rl [or] : M => Or(M,M) .
+   rl [Not] : M => Not(M) .
+   rl [Implies] : M => Implies(M,M) .
+   rl [Xor] : M => Xor(M,M) .
+   rl [If] : M => If(M,M,M) .
+
+
+   ---   Atomic operators
+   rl [a] : M => a .
+   rl [b] : M => b .
+   rl [c] : M => c .
+
+
+endm

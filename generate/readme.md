@@ -14,13 +14,19 @@ python3 generate_formula.py
 > generate formulas.txt
 python3 generate_mutant.py
 > generate mutants.txt
-python3 check_if_equivalent.py
+python3 sanity_check_LTL.py
+python3 sanity_check_CTL.py
 ```
+
+To run all this files in one go, run the executable file 
+```
+./execute_generation_pipeline.sh
+```
+and it executes the four files above with the atomic propositions [a,b,c] that you can change in the executable file, and depth 4 for the original formulas that you can change in the search() function inside the file for generating formulas. The last step of the pipeline is the sanity check which check whether the formulas and mutants are equivalents or something went wrong. 
 
 #### Maude folder
 Contains the Maude files, which generates the random formulas:
-generate_formula.maude
-generate_mutant.maude
-
-#### Spot folder
-There is also a folder with spot which still has to be implemnted. 
+generate_formula_LTL.maude
+generate_formula_CTL.maude
+generate_mutant_LTL.maude
+generate_mutant_CTL.maude

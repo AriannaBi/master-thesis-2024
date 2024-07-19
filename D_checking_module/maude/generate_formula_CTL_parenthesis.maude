@@ -1,0 +1,42 @@
+
+
+mod gen_formula_CTL is
+   sort Formula .
+
+   ops a b c : -> Formula .
+   
+
+   op ~ : Formula -> Formula . ---    not
+   op X : Formula -> Formula . ---    next
+   op F : Formula -> Formula . ---    eventually
+   op G : Formula -> Formula . ---    always
+
+   op (_)^(_) : Formula Formula -> Formula . ---    and
+   op (_)v(_) : Formula Formula -> Formula . ---    or
+   op (_)U(_) : Formula Formula -> Formula . ---    until
+   op (_)->(_) : Formula Formula -> Formula . ---    implication
+   op (_)<->(_) : Formula Formula -> Formula . ---    implication
+   --- CTL
+   op AX(_) : Formula -> Formula . ---    path quantifier
+   op AG(_) : Formula -> Formula . ---    path quantifier
+   op AF(_) : Formula -> Formula . ---    path quantifier
+   op A((_)U(_)) : Formula Formula -> Formula . ---    path quantifier
+   --- op A~(_) : Formula -> Formula . ---    path quantifier
+   
+   op EX(_) : Formula -> Formula . ---    path quantifier
+   op EG(_) : Formula -> Formula . ---    path quantifier
+   op EF(_) : Formula -> Formula . ---    path quantifier
+   op E((_)U(_)) : Formula Formula -> Formula . ---    path quantifier
+
+   vars M : Formula .
+
+   --- Formula operators
+   rl [] : AX(M) => AX[M] .
+   rl [] : EX(M) => EX[M] .
+   rl [] : A((M)U(M)) => A[(M)U(M)] .
+   rl [] : E((M)U(M)) => E[(M)U(M)] .
+   
+
+
+
+endm

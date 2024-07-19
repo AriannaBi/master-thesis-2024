@@ -36,14 +36,18 @@ if try_file:
 
 f = open("../generate/output/filtered_mutants_LTL.txt", "r")
 lines = f.readlines()
+num_automatas_original = 0
+num_automatas_mutant = 0
 # lines[:20]
 for line in lines:
+    num_automatas_original += 1
     formulas = line.split(' ')
     # let's start to do it with the original formulas. and then we can move to the mutants.
     # print(formulas)
     formulas = line.split(' ')[:-1] #last element is \n
     formulas = [x for x in formulas if x] #remove empty elements ''
     for formula in formulas:
+        num_automatas_mutant += 1
     #     spot_command = "ltl2tgba -f '" + spot_to_spin(formula) + "'"
         spot_command = "ltl2tgba -B '" + formula + "'"
         spin_command = "spin -f '" + spot_to_spin(formula) + "' -a"
@@ -53,7 +57,8 @@ for line in lines:
         # create the automatas
         spot_automata_HOA = subprocess.run(spot_command, shell=True, capture_output=True, text=True)
         spin_automata_HOA = subprocess.run(spin_command, shell=True, capture_output=True, text=True)
-
+        # print automata
+        
         # save and convert the spin automata from neverclaim to hoa 
         file_name_spin = "spin_never_claim.never"
         with open(file_name_spin, 'w') as file:
@@ -68,8 +73,12 @@ for line in lines:
             file.write(spin_automata_HOA)
             file.write("\n~\n")
 
+        print(spot_automata_HOA.stdout)
+        print(spin_automata_HOA)
+        print("\n\n\n")
 
         # delete the file 
         if os.path.exists("spin_never_claim.never"):
             os.remove("spin_never_claim.never")
+print("num original formulas" , num_automatas_original, "num mutant" ,num_automatas_mutant)
 

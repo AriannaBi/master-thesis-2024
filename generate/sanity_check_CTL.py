@@ -21,11 +21,12 @@ Lines = file_in.readlines()
 
 n_mutants = 0
 n_formulas = 0
+error = False
 for line in Lines:
     n_formulas += 1
     array_formula = line.split(' ')[:-1] #last element is \n
     array_formula = [x for x in array_formula if x] #remove empty elements ''
-    print(array_formula)
+    # print(array_formula)
     original_formula = array_formula[0]
     f = original_formula
     mutants = array_formula[1:]
@@ -38,11 +39,16 @@ for line in Lines:
         command = f"./ctl-sat {check_UNSAT}"
         result = subprocess.run(command, shell=True, capture_output=True, text=True)
         # print(result.stdout)
+        
         if result.returncode == 0:
             # if result not contain ("is NOT satisfiable")
             if "is satisfiable" in result.stdout or "Error" in result.stdout:
                 print("Error: ", result.stdout)
+                error = True
         else:
             # Print an error message
             print("Error executing command:", result.stderr)
+            error = True
 
+if error == False:
+    print("Checked ", n_formulas, "formulas and ", n_mutants, " mutants, all CTL equivalent and syntactically correct.")

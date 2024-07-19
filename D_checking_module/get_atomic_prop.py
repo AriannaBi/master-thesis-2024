@@ -2,111 +2,100 @@ import os
 import re
 import random
 import numpy as np
+import shutil
 # cd Formula-generator
-# python3 generate_formula.py 
 
-# get atomic proposition from the model file
-# helper functions that retrieve the atomics propositions
-def get_atomic_propositions(file_name):
-    atomic_propositions = []
-    type_prism = ["int", "bool", "enum"]
-    with open(file_name, 'r') as file:
+# Get atomic propositions and labels string from the module file
+def get_ap_and_label(module_file_name):
+    ap = []
+    label = []
+    # type_prism = ["int", "bool", "enum"]
+    with open(module_file_name, 'r', encoding='ISO-8859-1') as file:
         lines = file.readlines()
         for line in lines:
-                line_ap = re.findall(r'[^\t\s]\S*\s?:\s*[^\(].*\s*;', line)
+            # Find ap
+            line_ap = re.findall(r'\S+\s*:\s*\[\d+\.\.\d+\];', line) #find atomic propositions s.a. s : [0..4];
+            if len(line_ap) > 0:
+                ap_tmp = line_ap[0].split(":")
+                ap_name = ap_tmp[0].strip(' ')
+                ap_value = ap_tmp[1].strip(' ').strip(';').strip('[').strip(']')
+                ap_tmp = ap_name + "=" + ap_value
+                
+                ap.append(ap_tmp)
+            
+            
+            # Find labels
+            line_label = re.findall(r'label\s*"\S*"\s*=', line) #find labels s.a. label "A" = a;
+            if len(line_label) > 0:
+                line_label = re.findall(r'"\S*"', line_label[0])
+                label.append(line_label[0])
+                
+    return ap, label
 
-                if len(line_ap) > 0:
-                    split_ap = line_ap[0].split(":")
-
-                    if (len(split_ap) == 2):
-                        if split_ap[1].strip(' ')[0] == '[':
-                            atomic_propositions.append(line_ap)
-                        elif split_ap[1].strip(' ').strip(';') in type_prism:
-                            atomic_propositions.append(line_ap)
-    return atomic_propositions
-
-
+def random_combination_ap(name, min, max):
+    return name + "=" + str(random.randint(min, max))
 
 # function that generates atomic propositions assignments. 
 def generate_ap(file_name):
-    atomic_props = get_atomic_propositions(file_name)
+    ap, label = get_ap_and_label(file_name)
     generated_ap = []
-    type_prism = ["int", "bool", "enum"]
-    for elem in atomic_props:
-        elem = elem[0].split(":")
-        
-        if elem[1].strip(' ').strip(';')  in type_prism:
-            # print(elem)
-            created_ap = elem[0] + " = true"
-            created_ap = created_ap.replace(' ', '')
-            generated_ap.append(created_ap)
 
-            created_ap = elem[0] + " = false"
-            created_ap = created_ap.replace(' ', '')
-            generated_ap.append(created_ap)
-        else:
-            # take the two numbers inside the square brakets
-            start = int(re.findall(r'\d+', elem[1])[0])
-            end = re.findall(r'\.\.\S*\]', elem[1])[0].strip(']').strip('..')
-            # print(start)
-            # print(end)
-            if end.isdigit():
-                # print("here")
-                for i in range(start, int(end)+1):
-                    created_ap = elem[0] + "=" + str(i)
-                    created_ap = created_ap.replace(' ', '')
-                    generated_ap.append(created_ap)
-            # else:
-                # add a random number for MAX or N???
-            # generated_ap.append(elem[0] + " = " + str(random.randint(0, 1)))
-    return generated_ap
+    for elem in ap:
+        print(elem)
+        elem = elem.split("=")
+        # elem = elem[0].split("=")
+        range = elem[1].split("..")
+
+        name = elem[0]
+        min = int(range[0])
+        max = int(range[1])
+        # print(name, min, max)
+        generated_ap.append(random_combination_ap(name, min, max))
+    return generated_ap, label
 
 
-
-
-
-
-# ap = get_atomic_propositions(file_name)
-# print(ap)
-# for a in ap:
-#     print(a)
-# print(" ")
-# random_ap = generate_random_ap(ap)
-# for a in random_ap:
-#     print(a)
-
-
-
+def contain_for_loop(file_name):
+    with open(file_name, 'r', encoding='ISO-8859-1') as file:
+        content = file.read()
+        if "for" in content:
+            return True
+    return False
 
 if __name__ == "__main__":
-    # file_name = "../prism-examples/dtmcs/herman/herman3.pm"
-    file_name = "model.pm"
-    ap = generate_ap(file_name)
-    print(ap)
+    # traverse root directory, and list directories as dirs and files as files
+    for root, dirs, files in os.walk("../prism-examples"):
+        path = root.split(os.sep)
+        shutil.copy("prism", root)
+        os.chmod(root, 0o777)
+        for name_file in files:
+            # print(len(path) * '---', file)
+            # model doesn't have to be modified, because it works even with probabilities
+            # if file.endswith(".pm") or file.endswith(".sm") or file.endswith(".nsm") or file.endswith(".nm") or file.endswith(".prism"):
+            #     file_name = os.path.join(root, file)
+            #     modify_model(file_name)
+            # if file.endswith(".pctl") or file.endswith(".csl") or file.endswith(".props"):
+            #     file_name = os.path.join(root, file)
+            #     modify_property(file_name)
+            # elif file == "auto":
+            #     modify_auto(root)
 
 
 
+            # if name_file == "auto":
+            #     # for now, if in the auto file there is a for loop, we skip the file.
+            #     # try:
+            #     with open(os.path.join(root , name_file), 'r') as file:
+            #         # Read the entire file content
+            #         content = file.read()
+            #         # Check if the string "for" is in the content
+            #         if "for" in content:
+            #             print("Found 'for' in ", root)
+            #     # except FileNotFoundError:
+            #     #     print(f"The file {root} does not exist.")
 
-
-
-# traverse root directory, and list directories as dirs and files as files
-# for root, dirs, files in os.walk("prism-examples"):
-#     path = root.split(os.sep)
-#     destination = "copy-" + root    
-#     shutil.copy("run_PRISM/prism", destination)
-#     os.chmod(destination, 0o777)
-#     # print((len(path) - 1) * '---', os.path.basename(root))
-#     for file in files:
-#         # print(len(path) * '---', file)
-#         # model doesn't have to be modified, because it works even with probabilities
-#         # if file.endswith(".pm") or file.endswith(".sm") or file.endswith(".nsm") or file.endswith(".nm") or file.endswith(".prism"):
-#         #     file_name = os.path.join(root, file)
-#         #     modify_model(file_name)
-#         if file.endswith(".pctl") or file.endswith(".csl") or file.endswith(".props"):
-#             file_name = os.path.join(root, file)
-#             modify_property(file_name)
-#         elif file == "auto":
-#             modify_auto(root)
-
-
-
+            if name_file.endswith(".pm") or name_file.endswith(".sm") or name_file.endswith(".nsm") or name_file.endswith(".nm") or name_file.endswith(".prism"):
+                # ap, label = get_ap_and_label(os.path.join(root, name_file))
+                # print("file: ", os.path.join(root, name_file), "ap: ", ap, "label: ", label)
+                ap = generate_ap(os.path.join(root, name_file))
+                print(ap)
+            print('\n\n')

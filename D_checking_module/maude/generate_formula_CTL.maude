@@ -1,0 +1,64 @@
+
+
+mod gen_formula_CTL is
+   sort Formula .
+
+   ops a b c : -> Formula .
+   
+
+   op ! : Formula -> Formula . ---    not
+   op X : Formula -> Formula . ---    next
+   op F : Formula -> Formula . ---    eventually
+   op G : Formula -> Formula . ---    always
+
+   op (_)&(_) : Formula Formula -> Formula . ---    and
+   op (_)|(_) : Formula Formula -> Formula . ---    or
+   op (_)U(_) : Formula Formula -> Formula . ---    until
+   --- op (_)->(_) : Formula Formula -> Formula . ---    implication
+   --- op (_)<->(_) : Formula Formula -> Formula . ---    implication
+   --- CTL
+   op A[X(_)] : Formula -> Formula . ---    path quantifier
+   op A[G(_)] : Formula -> Formula . ---    path quantifier
+   op A[F(_)] : Formula -> Formula . ---    path quantifier
+   op A[((_)U(_))] : Formula Formula -> Formula . ---    path quantifier
+   --- op A~(_) : Formula -> Formula . ---    path quantifier
+   
+   op E[X(_)] : Formula -> Formula . ---    path quantifier
+   op E[G(_)] : Formula -> Formula . ---    path quantifier
+   op E[F(_)] : Formula -> Formula . ---    path quantifier
+   op E[((_)U(_))] : Formula Formula -> Formula . ---    path quantifier
+   --- op E~(_) : Formula -> Formula . ---    path quantifier
+   --- op EX_ : Formula -> Formula . ---    path quantifier
+   
+   vars M : Formula .
+
+--- You apply the rule once, and you get "A X(a)".
+--- Now, according to the rule, "A X(a)" matches the pattern "M", so the rule can be applied again.
+--- Applying the rule again to "A X(a)", you get "A A X(a)".
+
+--- crl [next_A] : M => A X(M) 
+---       if M = a .
+
+   --- Formula operators
+   rl [next_A] : M => A[X(M)] .
+   rl [next_E] : M => E[X(M)] .
+   rl [not] : M => !(M) .
+   rl [not] : M => !(M) .
+   rl [always_A] : M => A[G(M)] .
+   rl [always_E] : M => E[G(M)] .
+   rl [eventually_A] : M => A[F(M)] .
+   rl [eventually_E] : M => E[F(M)] .
+
+   rl [and] : M => (M)&(M) .
+   rl [or] : M => (M)|(M) .
+   rl [until_A] : M => A[((M)U(M))] .
+   rl [until_E] : M => E[((M)U(M))] .
+
+
+   ---   Atomic operators
+   rl [a] : M => a .
+   rl [b] : M => b .
+   rl [c] : M => c .
+
+
+endm

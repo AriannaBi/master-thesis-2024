@@ -1,0 +1,5 @@
+a
+(str.++ a a)
+(str.++ (str.++ a a) (str.++ a a))
+(str.++ (str.++ a a) a)
+(str.++ a (str.++ a a))
