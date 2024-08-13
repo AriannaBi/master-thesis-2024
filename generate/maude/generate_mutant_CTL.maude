@@ -42,12 +42,12 @@ mod gen_mutation_CTL is
    rl [distributive2] : EG ((M) v (N)) => (EF(M)) v (EF(N)) .
 
    rl [expansion_law1] : A ((M) U (N)) => (N) v ((M) ^ (AX(A((M) U (N))))) .
-   rl [expansion_law2] : AF(M) => (M) v (AX(AF(M))) .
+   --- rl [expansion_law2] : AF(M) => (M) v (AX(AF(M))) .
    rl [expansion_law3] : AG(M) => (M) ^ (AX(AG(M))) .
 
    rl [expansion_law4] : E ((M) U (N)) => (N) v ((M) ^ (EX(E((M) U (N))))) .
    rl [expansion_law5] : EF(M) => (M) v (EX(EF(M))) .
-   rl [expansion_law6] : EG(M) => (M) ^ (EX(EG(M))) .
+   --- rl [expansion_law6] : EG(M) => (M) ^ (EX(EG(M))) .
 
    ******************************* end rules *******************************************
    
@@ -64,12 +64,12 @@ mod gen_mutation_CTL is
    rl [distributive2_reverse] :  (EF(M)) v (EF(N)) => EG ((M) v (N)) .
 
    rl [expansion_law1_reverse] :  (N) v ((M) ^ (AX(A((M) U (N))))) => A ((M) U (N)) .
-   rl [expansion_law2_reverse] : (M) v (AX(AF(M))) => AF(M) .
+   --- rl [expansion_law2_reverse] : (M) v (AX(AF(M))) => AF(M) .
    rl [expansion_law3_reverse] :  (M) ^ (AX(AG(M))) => AG(M) .
 
    rl [expansion_law4_reverse] :  (N) v ((M) ^ (EX(E((M) U (N))))) => E ((M) U (N)) .
    rl [expansion_law5_reverse] :  (M) v (EX(EF(M))) => EF(M) .
-   rl [expansion_law6_reverse] : (M) ^ (EX(EG(M))) => EG(M) .
+   --- rl [expansion_law6_reverse] : (M) ^ (EX(EG(M))) => EG(M) .
    ******************************* end rules_reversed *******************************************
 
 
